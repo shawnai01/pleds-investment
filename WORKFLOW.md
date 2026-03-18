@@ -15,6 +15,37 @@
 └── News: 주요 헤드라인 10개
 ```
 
+### Phase 0.5: Data Integrity Audit (신규)
+
+**참여:** The Data Auditor (데이터 감사관)
+
+**목적:** Phase 0에서 수집된 모든 데이터를 전문가 토론에 투입하기 전에 교차검증
+
+**절차:**
+1. **가격 데이터 교차검증** — 각 자산 가격을 2개+ 소스에서 확인 (CoinGecko vs Yahoo Finance vs Google Finance 등)
+2. **재무 데이터 원본 대조** — SEC filing(10-K/10-Q) 원본 vs 스크리너 수치 비교. 기간(TTM vs 분기 vs 연환산) 명시 강제
+3. **변동률 기준 시점 명시** — 전일 종가 대비, 주간, 월간 등 기준점을 반드시 기재
+4. **신뢰도 등급 부여:**
+   - ✅ **Verified** — 2개+ 소스 일치 (허용 오차 ±2%)
+   - ⚠️ **Single-Source** — 1개 소스만 확인. 전문가 인용 시 `[단일출처]` 표기 의무
+   - ❌ **Unverified** — 확인 불가. **투자 판정에 사용 금지** (참고만 가능)
+5. **교차검증 불일치 5% 이상** → `⚡ Data Conflict` 플래그 → 해당 데이터 사용 시 Moderator가 명시적 판단
+
+**산출물:** `daily/YYYY-MM-DD-data-audit.md`
+```
+| 항목 | 값 | 소스1 | 소스2 | 등급 | 비고 |
+|------|---|-------|-------|------|------|
+| BTC | $71,173 | CoinGecko | Yahoo | ✅ | 차이 0.02% |
+| FFR | 4.25-4.50% | — | — | ❌ | FOMC 날짜 기준 추정 |
+```
+
+**핵심 규칙:**
+- ❌ Unverified 데이터로 매수/매도 판정 금지
+- ⚠️ Single-Source 데이터는 전문가가 인용 시 반드시 `[단일출처]` 표기
+- Data Auditor는 검증 결과만 제공하며 투자 의견을 제시하지 않음 (독립성 유지)
+
+---
+
 ### Phase 1: Layer 1 — Macro Debate (~15분)
 
 **참여:** The Machine, The Liquidity Hawk, The Cycle Sentinel, The Contrarian Catalyst, Macro Moderator

@@ -19,6 +19,25 @@
 
 ---
 
+## Phase 0.5: DATA INTEGRITY (데이터 검증)
+
+### 0-1. **The Data Auditor (데이터 감사관)** 🆕
+- **모델:** Nate Silver + 퀀트 리서치 데스크
+- **프레임워크:** 교차검증(Cross-validation), 소스 삼각측량, 신뢰도 등급화
+- **역할:** Phase 0 수집 데이터를 2개+ 소스로 교차검증하고 신뢰도 등급(✅/⚠️/❌) 부여
+- **데이터 소스 풀:**
+  - 가격: CoinGecko API, Yahoo Finance, Google Finance, TradingView
+  - 재무: SEC EDGAR (10-K/10-Q 원본), Macrotrends, Wisesheets
+  - 매크로: FRED (연준 데이터), Treasury.gov, CME FedWatch
+  - 크립토 온체인: Glassnode, CoinMetrics, DefiLlama
+- **원칙:**
+  - 검증만 수행, 투자 의견 제시 금지 (독립성)
+  - 기간(TTM/분기/연환산) 미명시 데이터는 자동 ⚠️ 등급
+  - 불일치 5%+ 시 `⚡ Data Conflict` 플래그
+- **산출물:** `daily/YYYY-MM-DD-data-audit.md`
+
+---
+
 ## Layer 1: MACRO (거시경제)
 
 ### 1-1. **The Machine (거시 기계론자)**
@@ -172,10 +191,11 @@
 
 | Layer | 전문가 | 사회자 | 계 |
 |-------|--------|--------|---|
+| Data Integrity | 1 | — | 1 |
 | Macro | 4 | 1 | 5 |
 | Sector | 3 | 1 | 4 |
 | Value Chain | 2 | 1 | 3 |
 | Company | 3 | 1 | 4 |
 | Chart | 4 | 1 | 5 |
 | **Synthesis** | **1 (Allocator)** | — | **1** |
-| **Total** | **17** | **5** | **22** |
+| **Total** | **18** | **5** | **23** |
