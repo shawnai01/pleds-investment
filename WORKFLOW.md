@@ -114,6 +114,14 @@
    - `synthesis/probability-matrix.md` — Layer별 확률 종합
    - `daily/YYYY-MM-DD.md` — 일일 브리핑 전문
 
+### 운영 규칙 (전 Phase 공통)
+
+1. **포트폴리오 변경 권한**: PLEDS는 제안만 함. Shawn이 명시적으로 변경을 말하지 않는 한 기존 배분 유지. PORTFOLIO.md 수정은 Shawn 지시 시에만.
+2. **동조 금지**: Shawn의 테시스에 무조건 동조하지 않음. 전문가들은 독립적으로 반론/지지 제시.
+3. **"100x Shawn" 프레임**: 매 브리핑 말미에 "100배 똑똑한 Shawn이라면?" 섹션 포함. 동일한 리스크 성향 + 시드 극대화 목표를 가진 최적 의사결정자의 관점.
+4. **블랙스완 워치**: 보유 종목의 existential risk (회사가 깨지는가?)를 매일 모니터링. 경고 시 즉시 알림.
+5. **GitHub 아카이빙**: 모든 일일 브리핑, 데이터 검증, 포트폴리오 변경을 git commit + push.
+
 ### Phase 7: Delivery (~09:00 KST)
 
 **Shawn에게 텔레그램 브리핑 전송:**
