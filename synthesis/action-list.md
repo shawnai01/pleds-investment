@@ -1,41 +1,31 @@
-# PLEDS Action List - March 19, 2026
+# PLEDS Action List — Updated 2026-03-19
 
-## Investment Actions Today
+## Active Actions
 
-### HOLD Positions (No Changes)
-- **BMNR (35%)** - HOLD - ETH treasury thesis intact, crypto momentum supportive
-- **CRCL (10%)** - HOLD - Defensive crypto play, regulatory clarity benefit  
-- **COIN (5%)** - HOLD - Institutional adoption tailwind despite regulatory overhang
-- **SGOV (30%)** - HOLD - Defensive anchor in uncertain macro environment
-- **Cash (20%)** - HOLD - Maintain optionality for opportunities
+| # | 종목 | 액션 | 사이즈 | 트리거 | 상태 |
+|---|------|------|--------|--------|------|
+| 1 | BMNR | HOLD (주의) | 35% → 시스템 권고 25% | — | 🟡 과대노출 경고 |
+| 2 | CRCL | HOLD | 10% | 어닝 5/12 | 🟢 적정 |
+| 3 | COIN | HOLD | 5% | 어닝 5/7 | 🟢 적정 |
+| 4 | SGOV | HOLD | 30% | — | 🟢 |
+| 5 | Cash | HOLD | 20% | — | 🟢 |
 
-### Rationale
-Current portfolio allocation aligns with Neutral-to-Risk-Off regime assessment. The 50/50 risk/safe split provides appropriate balance given:
+## Conditional Actions (If-Then)
 
-1. **Crypto Strength**: BTC $71,230 and ETH $2,203 show institutional adoption continuing
-2. **Macro Uncertainty**: Fed 3.50-3.75% rates maintained, inflation watch continues  
-3. **Limited Visibility**: Data access constraints require defensive positioning
+| 조건 | 액션 | 우선순위 |
+|------|------|---------|
+| ETH < $2,000 | BMNR 비중 재검토 (축소 또는 손절) | 🔴 높음 |
+| VIX > 30 | 전체 위험자산 축소 검토 | 🔴 높음 |
+| BMNR < $18 | 손절 라인 도달 — 축소 실행 | 🔴 높음 |
+| 스테이블코인법 통과 | CRCL 15%로 확대 검토 | 🟡 중간 |
+| ETH > $2,500 | BMNR 테시스 강화, 비중 유지 | 🟢 낮음 |
 
-### Risk Monitoring Levels
-- **BTC below $65K**: Consider reducing crypto exposure
-- **ETH below $1,950**: BMNR position stress level
-- **Fed hawkish pivot**: Increase SGOV allocation
-
-### Opportunity Watch
-- **New corporate treasury adoption announcements**: Could support BMNR thesis
-- **Crypto weakness**: Would provide entry points for additional allocation
-- **Traditional market stress**: May create relative value opportunities
-
-## Research Priorities
-1. Monitor BMNR for any treasury strategy updates
-2. Track institutional crypto adoption news flow
-3. Watch for changes in Fed communication tone
-4. Assess any emerging treasury bitcoin adoption plays
+## Portfolio Drift Alerts
+- ⚠️ BMNR 35% > 시스템 상한 25%
+- ⚠️ 크립토 합계 50% > 테마 상한 40%
 
 ## Next Review
-**Tomorrow**: Continue daily monitoring with emphasis on crypto technical levels and any macro developments.
-
----
-*Action Date: March 19, 2026*
-*Portfolio Status: Defensive positioning maintained*
-*Next Rebalancing Trigger: Material change in macro regime or crypto technical breaks*
+- 다음 일일 브리핑: 2026-03-20
+- BMNR 어닝: 2026-04-14
+- CRCL 어닝: 2026-05-12
+- COIN 어닝: 2026-05-07
