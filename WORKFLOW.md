@@ -103,18 +103,26 @@
 4. **투표:** 기술적 등급 + 진입 구간 + 손절 라인
 5. **산출물:** `layers/L5-chart/signals.md` 업데이트
 
-### Phase 6: Synthesis — Final Verdict (~10분)
+### Phase 6: Synthesis — Conviction Convergence (~10분)
 
 **참여:** The Allocator (수석 투자 책임자)
 
+**원칙:** Phase 1-5의 자유 토론 결과를 읽고, Conviction Card (C1-C4)로 수렴한다.
+
 **절차:**
-1. 5개 Layer 결과 종합
+1. 5개 Layer + Cross-Layer(Bottleneck Hunter) 결과 종합
 2. 확률 가중 계산 (METHODOLOGY.md 공식)
-3. 포지션 사이징 결정
-4. 시나리오별 대응 계획 수립
-5. **산출물:**
-   - `synthesis/action-list.md` — 오늘의 투자 액션
-   - `synthesis/probability-matrix.md` — Layer별 확률 종합
+3. **모든 종목/테마에 Conviction Card 작성:**
+   - C1 🔥 Burn? — 태울 만한가? (⭐~⭐⭐⭐ + 비대칭 배율)
+   - C2 🚪 Entry — 진입 조건 (가격, 시점, 이벤트)
+   - C3 🎯 Exit — 목표가/익절 (시간축별)
+   - C4 ☠️ Kill — 가설 폐기/손절 조건 (기계적 실행)
+4. 기존 보유 종목의 C2/C3/C4 **조건 달성 여부 체크** (Pre-Commitment Trigger)
+5. 포지션 사이징 결정
+6. '100배 똑똑한 Shawn이라면?' 섹션
+7. **산출물:**
+   - `synthesis/action-list.md` — 오늘의 투자 액션 + Conviction Cards
+   - `synthesis/conviction-cards.md` — 전 종목 카드 누적 관리
    - `daily/YYYY-MM-DD.md` — 일일 브리핑 전문
 
 ### 운영 규칙 (전 Phase 공통)
@@ -175,7 +183,8 @@
    - 병목을 소유/통제하는 상장 기업 리스트
    - Constraint Premium 평가 (대체 불가능성 × 수요 탄력성)
 5. **PLEDS Layer 4 연결**: 식별된 기업을 Company 전문가 토론에 투입
-6. **산출물**: `debates/bottleneck-thesis-{YYYY-MM-DD}-{테마}.md` → GitHub push
+6. **Conviction Card 작성**: 식별된 Constraint Owner별 C1-C4 카드 작성
+7. **산출물**: `debates/bottleneck-thesis-{YYYY-MM-DD}-{테마}.md` → GitHub push
 
 ### Tsunami 테마 재스캔 계획
 
