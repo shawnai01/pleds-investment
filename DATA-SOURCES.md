@@ -17,12 +17,12 @@
 | 소스 | 커버리지 | 상태 | 환경변수 |
 |------|----------|------|----------|
 | **FRED API** | FFR, 금리, CPI, M2, 실업률 등 매크로 | ✅ 작동 확인 | `FRED_API_KEY` |
+| **Alpha Vantage** | 주식 시세, 기술지표 | ✅ 작동 확인 (25 req/day) | `ALPHAVANTAGE_API_KEY` |
 
 ### ⚠️ API 키 필요 (Shawn 인증 요청)
 
 | 소스 | 커버리지 | 무료 티어 | 키 발급 URL |
 |------|----------|----------|-------------|
-| **Alpha Vantage** | 주식 시세, 기술지표, FFR | 25 req/day | https://www.alphavantage.co/support/#api-key |
 | **Twelve Data** | 실시간 시세, 기술지표 | 800 req/day | https://twelvedata.com/pricing (Free) |
 | **Brave Search API** | 웹 검색 | 2000 req/mo | OpenClaw 설정 필요 |
 
@@ -40,7 +40,7 @@
 | 데이터 항목 | 1차 소스 | 2차 소스 (교차검증) | 현재 상태 |
 |------------|----------|-------------------|----------|
 | BTC/ETH 가격 | CoinGecko API ✅ | Yahoo Finance | ✅ 가능 |
-| 주식 시세 (SPY, QQQ 등) | Yahoo Finance | Alpha Vantage / Twelve Data | ⚠️ API 키 필요 |
+| 주식 시세 (SPY, QQQ 등) | Alpha Vantage (GLOBAL_QUOTE) | Yahoo Finance | ✅ 교차검증 가능 |
 | FFR (기준금리) | **FRED API** (DFEDTARU/DFEDTARL) | Fed 프레스릴리즈 | ✅ 작동 |
 | 2Y/10Y 금리 | FRED API (DGS2, DGS10) | Yahoo Finance (^TNX) | ✅ 작동 |
 | VIX | Yahoo Finance (^VIX) | CBOE | ✅ 가능 |
