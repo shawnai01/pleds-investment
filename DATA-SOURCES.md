@@ -9,7 +9,7 @@
 | 소스 | 커버리지 | 접근 방식 | 인증 |
 |------|----------|----------|------|
 | **CoinGecko API** | BTC, ETH, 크립토 전반, 24h 변동 | REST API (무료) | 불필요 |
-| **Yahoo Finance** | 주식, ETF 시세, 재무 | web_fetch (HTML) | 불필요 |
+| **Yahoo Finance v8 API** | 주식/ETF/지수 OHLCV, 당일 종가 | REST API (무료, rate limit 주의) | 불필요 |
 | **SEC EDGAR** | 10-K, 10-Q, 8-K 원본 | web_fetch | 불필요 |
 
 ### ✅ API 키 확보 완료
@@ -43,7 +43,7 @@
 | 주식 시세 (SPY, QQQ 등) | Alpha Vantage (GLOBAL_QUOTE) | Yahoo Finance | ✅ 교차검증 가능 |
 | FFR (기준금리) | **FRED API** (DFEDTARU/DFEDTARL) | Fed 프레스릴리즈 | ✅ 작동 |
 | 2Y/10Y 금리 | FRED API (DGS2, DGS10) | Yahoo Finance (^TNX) | ✅ 작동 |
-| VIX | Yahoo Finance (^VIX) | CBOE | ✅ 가능 |
+| VIX | **Yahoo v8 (^VIX, 당일)** | FRED VIXCLS (1일 지연) | ✅ Yahoo 우선 |
 | DXY | Yahoo Finance (DX-Y.NYB) | Twelve Data | ⚠️ 키 필요 |
 | MVRV | Glassnode / CoinMetrics | — | ❌ API 키 필요 (유료) |
 | BTC Dominance | CoinGecko API ✅ | TradingView | ✅ 가능 |
