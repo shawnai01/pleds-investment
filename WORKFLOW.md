@@ -192,13 +192,13 @@
 
 | # | 테마 | 핵심 질문 | 상태 |
 |---|------|----------|------|
-| 1 | AI Agent/A2A Economy | 에이전트 확산의 병목은? (결제, 인증, 메모리, 컴퓨트) | ⬜ 대기 |
-| 2 | Robotics | 로봇 대중화의 병목은? (액추에이터, 배터리, 센서, 규제) | ⬜ 대기 |
-| 3 | GLP-1 / Obesity | GLP-1 보급의 병목은? (제조 capacity, API, 냉장 유통) | ⬜ 대기 |
-| 4 | Nuclear Energy | 원전 확장의 병목은? (우라늄, 인허가, 인력, SMR 기술) | ⬜ 대기 |
-| 5 | Water Crisis | 수처리 확장의 병목은? (막기술, 에너지, 인프라 자본) | ⬜ 대기 |
-| 6 | Demographic → Automation | 자동화 전환의 병목은? (로봇 비용, 통합, 인력 재교육) | ⬜ 대기 |
-| 7 | Synbio | 합성생물학의 병목은? (DNA 합성 비용, 규제, 스케일업) | ⬜ 대기 |
+| 1 | AI Agent/A2A Economy | 결제 인프라 (CRCL) | ✅ 완료 2026-03-19 |
+| 2 | Robotics | AI 범용 조작 SW (NVDA, TXN) | ✅ 완료 2026-03-19 |
+| 3 | GLP-1 / Obesity | 펩타이드 API 제조 (Bachem, WST) | ✅ 완료 2026-03-19 |
+| 4 | Nuclear Energy | HALEU 농축 (LEU) | ✅ 완료 2026-03-19 |
+| 5 | Water Crisis | 에너지 회수 PX 독점 (ERII) | ✅ 완료 2026-03-19 |
+| 6 | Demographic → Automation | SI 인력 부족 (ISRG, TER) | ✅ 완료 2026-03-19 |
+| 7 | Synbio | 설계 지능 AI for Bio (TWST 조건부) | ✅ 완료 2026-03-19 |
 
 → 각 테마를 1개씩 서브에이전트로 실행, 결과를 GitHub에 아카이빙
 
