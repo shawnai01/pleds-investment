@@ -51,7 +51,7 @@
 
 ### Phase 1: Layer 1 — Macro Debate (~15분)
 
-**참여:** The Machine, The Liquidity Hawk, The Cycle Sentinel, The Contrarian Catalyst, Macro Moderator
+**참여:** The Machine, The Liquidity Hawk, The Cycle Sentinel, The Contrarian Catalyst, **The Bottleneck Hunter (Cross-Layer)**, Macro Moderator
 
 **절차:**
 1. 각 전문가가 1-2문장으로 현재 뷰 제시 (독립적)
@@ -63,7 +63,7 @@
 
 ### Phase 2: Layer 2 — Sector Scan (~10분)
 
-**참여:** The Disruptor, The Value Mapper, The Theme Hunter, Sector Moderator
+**참여:** The Disruptor, The Value Mapper, The Theme Hunter, **The Bottleneck Hunter (Cross-Layer)**, Sector Moderator
 
 **절차:**
 1. Macro regime을 전달받고 산업 영향 분석
@@ -74,7 +74,7 @@
 
 ### Phase 3: Layer 3 — Value Chain Analysis (~5분)
 
-**참여:** The Strategist, The Network Thinker, Value Chain Moderator
+**참여:** The Strategist, The Network Thinker, **The Bottleneck Hunter (Cross-Layer, 주도적 역할)**, Value Chain Moderator
 
 **절차:**
 1. Phase 2에서 선정된 유망 산업의 밸류체인 매핑
@@ -83,7 +83,7 @@
 
 ### Phase 4: Layer 4 — Company Deep Dive (~15분)
 
-**참여:** The Compounder, The Catalyst Hunter, The Forensic Accountant, Company Moderator
+**참여:** The Compounder, The Catalyst Hunter, The Forensic Accountant, **The Bottleneck Hunter (Cross-Layer)**, Company Moderator
 
 **절차:**
 1. 워치리스트 + 현재 보유 종목 리뷰
@@ -150,6 +150,48 @@
 3. **신규 테마 브레인스토밍** — Theme Hunter 주도
 4. **포지션 재조정 토론** — 드리프트 체크
 5. **다음 주 핵심 이벤트 프리뷰** — 어닝, FOMC, CPI 등
+
+---
+
+---
+
+## Bottleneck Thesis Scan (제약 조건 테마 스캔)
+
+### 목적
+기존 투자 테마 또는 신규 메가트렌드를 **제약 조건 렌즈**로 분석하여 병목 소유자(Constraint Owner)를 식별하고 투자 기회를 발굴한다.
+
+### 절차 (테마당 1회)
+
+1. **테마 정의**: 확장 중인 메가트렌드 명확화 (예: "A2A 경제", "AI 에이전트 확산")
+2. **Constraint Chain Mapping**: 
+   - 해당 테마가 10x 확장되려면 거쳐야 하는 밸류체인 전체 매핑
+   - 각 노드의 현재 capacity vs 필요 capacity 추정
+   - **1차 병목** (지금 막고 있는 것) + **2차 병목** (1차 해소 시 다음) 식별
+3. **Bottleneck Hunter 분석**:
+   - 병목의 해소 난이도 (기술적/자본적/규제적)
+   - 병목 지속 기간 추정
+   - 역사적 유사 사례 비교 (HBM, 우라늄, 리튬 등)
+4. **Constraint Owner 식별**:
+   - 병목을 소유/통제하는 상장 기업 리스트
+   - Constraint Premium 평가 (대체 불가능성 × 수요 탄력성)
+5. **PLEDS Layer 4 연결**: 식별된 기업을 Company 전문가 토론에 투입
+6. **산출물**: `debates/bottleneck-thesis-{YYYY-MM-DD}-{테마}.md` → GitHub push
+
+### Tsunami 테마 재스캔 계획
+
+기존 7개 Tsunami 테마를 제약 조건 렌즈로 순차 재스캔:
+
+| # | 테마 | 핵심 질문 | 상태 |
+|---|------|----------|------|
+| 1 | AI Agent/A2A Economy | 에이전트 확산의 병목은? (결제, 인증, 메모리, 컴퓨트) | ⬜ 대기 |
+| 2 | Robotics | 로봇 대중화의 병목은? (액추에이터, 배터리, 센서, 규제) | ⬜ 대기 |
+| 3 | GLP-1 / Obesity | GLP-1 보급의 병목은? (제조 capacity, API, 냉장 유통) | ⬜ 대기 |
+| 4 | Nuclear Energy | 원전 확장의 병목은? (우라늄, 인허가, 인력, SMR 기술) | ⬜ 대기 |
+| 5 | Water Crisis | 수처리 확장의 병목은? (막기술, 에너지, 인프라 자본) | ⬜ 대기 |
+| 6 | Demographic → Automation | 자동화 전환의 병목은? (로봇 비용, 통합, 인력 재교육) | ⬜ 대기 |
+| 7 | Synbio | 합성생물학의 병목은? (DNA 합성 비용, 규제, 스케일업) | ⬜ 대기 |
+
+→ 각 테마를 1개씩 서브에이전트로 실행, 결과를 GitHub에 아카이빙
 
 ---
 
