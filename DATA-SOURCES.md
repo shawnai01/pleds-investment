@@ -18,12 +18,12 @@
 |------|----------|------|----------|
 | **FRED API** | FFR, 금리, CPI, M2, 실업률 등 매크로 | ✅ 작동 확인 | `FRED_API_KEY` |
 | **Alpha Vantage** | 주식 시세, 기술지표 | ✅ 작동 확인 (25 req/day) | `ALPHAVANTAGE_API_KEY` |
+| **Twelve Data** | 실시간 시세, OHLCV, 기술지표 | ✅ 작동 확인 (800 req/day) | `TWELVEDATA_API_KEY` |
 
 ### ⚠️ API 키 필요 (Shawn 인증 요청)
 
 | 소스 | 커버리지 | 무료 티어 | 키 발급 URL |
 |------|----------|----------|-------------|
-| **Twelve Data** | 실시간 시세, 기술지표 | 800 req/day | https://twelvedata.com/pricing (Free) |
 | **Brave Search API** | 웹 검색 | 2000 req/mo | OpenClaw 설정 필요 |
 
 ### ❌ 접근 불가 (JS 렌더링 / 인증벽)
