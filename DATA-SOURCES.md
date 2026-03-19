@@ -12,11 +12,16 @@
 | **Yahoo Finance** | 주식, ETF 시세, 재무 | web_fetch (HTML) | 불필요 |
 | **SEC EDGAR** | 10-K, 10-Q, 8-K 원본 | web_fetch | 불필요 |
 
+### ✅ API 키 확보 완료
+
+| 소스 | 커버리지 | 상태 | 환경변수 |
+|------|----------|------|----------|
+| **FRED API** | FFR, 금리, CPI, M2, 실업률 등 매크로 | ✅ 작동 확인 | `FRED_API_KEY` |
+
 ### ⚠️ API 키 필요 (Shawn 인증 요청)
 
 | 소스 | 커버리지 | 무료 티어 | 키 발급 URL |
 |------|----------|----------|-------------|
-| **FRED API** | FFR, 금리, CPI, M2, 실업률 등 매크로 | 무제한 | https://fred.stlouisfed.org/docs/api/api_key.html |
 | **Alpha Vantage** | 주식 시세, 기술지표, FFR | 25 req/day | https://www.alphavantage.co/support/#api-key |
 | **Twelve Data** | 실시간 시세, 기술지표 | 800 req/day | https://twelvedata.com/pricing (Free) |
 | **Brave Search API** | 웹 검색 | 2000 req/mo | OpenClaw 설정 필요 |
@@ -36,8 +41,8 @@
 |------------|----------|-------------------|----------|
 | BTC/ETH 가격 | CoinGecko API ✅ | Yahoo Finance | ✅ 가능 |
 | 주식 시세 (SPY, QQQ 등) | Yahoo Finance | Alpha Vantage / Twelve Data | ⚠️ API 키 필요 |
-| FFR (기준금리) | **FRED API** | Fed 공식 프레스릴리즈 | ⚠️ FRED 키 필요 |
-| 2Y/10Y 금리 | FRED API (DGS2, DGS10) | Yahoo Finance (^TNX) | ⚠️ FRED 키 필요 |
+| FFR (기준금리) | **FRED API** (DFEDTARU/DFEDTARL) | Fed 프레스릴리즈 | ✅ 작동 |
+| 2Y/10Y 금리 | FRED API (DGS2, DGS10) | Yahoo Finance (^TNX) | ✅ 작동 |
 | VIX | Yahoo Finance (^VIX) | CBOE | ✅ 가능 |
 | DXY | Yahoo Finance (DX-Y.NYB) | Twelve Data | ⚠️ 키 필요 |
 | MVRV | Glassnode / CoinMetrics | — | ❌ API 키 필요 (유료) |
