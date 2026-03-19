@@ -1,31 +1,41 @@
-# PLEDS Action List — Updated 2026-03-19
+# PLEDS Action List - March 19, 2026
 
-## 🔴 즉시 실행 (Today)
-1. **BMNR 35% → 10% 축소** — 25%p 매도. 펀더멘탈 심각 (EPS -$13.22, 시총/매출 1,350x), 집중 리스크 해소
-2. **SGOV 30% → 37% 확대** — BMNR 매도 대금 일부 이전
-3. **USD Cash 20% → 35%** — 나머지 현금 보유
+## Investment Actions Today
 
-## 🟡 조건부 실행 (Watch)
-4. **COIN $190 이하 시 +3%p 추가매수** (5% → 8%) — 가장 건전한 크립토 인프라
-5. **CRCL $110-120 도달 시 추가매수 검토** — 네트워크 효과 + 규제 해자
+### HOLD Positions (No Changes)
+- **BMNR (35%)** - HOLD - ETH treasury thesis intact, crypto momentum supportive
+- **CRCL (10%)** - HOLD - Defensive crypto play, regulatory clarity benefit  
+- **COIN (5%)** - HOLD - Institutional adoption tailwind despite regulatory overhang
+- **SGOV (30%)** - HOLD - Defensive anchor in uncertain macro environment
+- **Cash (20%)** - HOLD - Maintain optionality for opportunities
 
-## 🟢 모니터링
-- VIX 35+ → 긴급 포트폴리오 리뷰
-- BTC $65K 지지선 이탈 → 크립토 전체 축소
-- BMNR $15 이하 → 전량 매도
-- FOMC 다음 회의 발언 주시
+### Rationale
+Current portfolio allocation aligns with Neutral-to-Risk-Off regime assessment. The 50/50 risk/safe split provides appropriate balance given:
 
-## 목표 포트폴리오
-| Asset | Current | Target |
-|-------|---------|--------|
-| BMNR | 35% | 10% |
-| CRCL | 10% | 10% |
-| COIN | 5% | 8% |
-| SGOV | 30% | 37% |
-| Cash | 20% | 35% |
+1. **Crypto Strength**: BTC $71,230 and ETH $2,203 show institutional adoption continuing
+2. **Macro Uncertainty**: Fed 3.50-3.75% rates maintained, inflation watch continues  
+3. **Limited Visibility**: Data access constraints require defensive positioning
 
-**Crypto Total: 50% → 28%**
-**Safe Total: 50% → 72%**
+### Risk Monitoring Levels
+- **BTC below $65K**: Consider reducing crypto exposure
+- **ETH below $1,950**: BMNR position stress level
+- **Fed hawkish pivot**: Increase SGOV allocation
 
-## Regime: Risk-Off (51.25%)
-Next review: 2026-03-20 or on trigger event
+### Opportunity Watch
+- **New corporate treasury adoption announcements**: Could support BMNR thesis
+- **Crypto weakness**: Would provide entry points for additional allocation
+- **Traditional market stress**: May create relative value opportunities
+
+## Research Priorities
+1. Monitor BMNR for any treasury strategy updates
+2. Track institutional crypto adoption news flow
+3. Watch for changes in Fed communication tone
+4. Assess any emerging treasury bitcoin adoption plays
+
+## Next Review
+**Tomorrow**: Continue daily monitoring with emphasis on crypto technical levels and any macro developments.
+
+---
+*Action Date: March 19, 2026*
+*Portfolio Status: Defensive positioning maintained*
+*Next Rebalancing Trigger: Material change in macro regime or crypto technical breaks*
