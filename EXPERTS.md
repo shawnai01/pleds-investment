@@ -153,37 +153,75 @@
 
 ---
 
-## Layer 5: CHART (기술적 분석)
+## Layer 5: TECHNICAL (기술적 분석) — v2 Hybrid
 
-### 5-1. **The Momentum Master (모멘텀)**
-- **모델:** Mark Minervini + William O'Neil
-- **프레임워크:** SEPA (Specific Entry Point Analysis), CANSLIM, 상대강도
-- **데이터:** 가격/거래량, 이동평균, RS Rating, 52주 신고가 근접도
-- **성향:** "추세는 친구", 브레이크아웃 매수, 빠른 손절
+> **설계 원칙**: LLM은 차트를 "볼" 수 없다. 따라서:
+> 1. **정량 지표**는 API에서 기계적으로 수집 (Twelve Data)
+> 2. **정성 해석**은 실제 인간 TA 전문가의 공개 뷰를 검색/참조
+> 3. LLM이 자체 생성한 TA "의견"은 신뢰하지 않음
+>
+> **데이터 파이프라인**: Twelve Data API → RSI, MACD, BB, EMA, ADX, Stochastic, ATR, OBV
 
-### 5-2. **The Accumulation Reader (매집/분산 판독가)**
-- **모델:** Richard Wyckoff
-- **프레임워크:** Wyckoff Method — 매집(Accumulation), 분산(Distribution), 스프링, 테스트
-- **데이터:** 거래량 프로파일, 가격-볼륨 관계, 지지/저항
-- **성향:** "스마트 머니를 따라가라", 인내심 있는 진입
+### 5-1. **The Quant Dashboard (정량 지표 대시보드)** ⬆️개편
+- **역할:** 투자 의견이 아닌 **팩트 대시보드** 제공. 해석하지 않음.
+- **데이터 소스:** Twelve Data API (800 req/day)
+- **필수 수집 지표** (종목당):
 
-### 5-3. **The Wave Counter (파동 분석가)** 🆕
-- **모델:** Elliott Wave + 피보나치
-- **프레임워크:** Elliott 5파-3파, 피보나치 되돌림/확장, 시간 사이클
-- **데이터:** 다중 타임프레임 파동 카운트, 피보나치 클러스터
-- **특별 임무:** 크립토(BTC, ETH) 파동 분석 전담
-- **추가 지표:** MVRV ratio, BTC dominance, Tether dominance, NVT ratio
-- **성향:** 구조적 패턴 인식, 시간+가격 목표 설정
+| 지표 | API | 의미 | 시그널 기준 (기계적) |
+|------|-----|------|-------------------|
+| RSI(14) | `rsi` | 과매수/과매도 | <30 과매도, >70 과매수 |
+| MACD(12,26,9) | `macd` | 추세 방향/전환 | 히스토그램 +/- 전환 |
+| Bollinger Bands(20,2) | `bbands` | 변동성/이탈 | 밴드 상단/하단 이탈 |
+| EMA 20/50/200 | `ema` | 추세 위치 | 골든크로스/데드크로스 |
+| ADX(14) | `adx` | 추세 강도 | >25 강한 추세, <20 비추세 |
+| Stochastic(14,3,3) | `stoch` | 단기 모멘텀 | <20 과매도, >80 과매수 |
+| ATR(14) | `atr` | 변동성 크기 | 손절 거리 산정용 |
+| OBV | `obv` | 거래량 추세 | 가격과 OBV 다이버전스 |
 
-### 5-4. **The Quant Signal (퀀트 시그널)** 🆕
-- **모델:** AQR/Renaissance 스타일
-- **프레임워크:** 통계적 이상, 평균 회귀, 모멘텀 팩터, 계절성
-- **역할:** 감정 배제한 순수 데이터 시그널 제공
-- **성향:** "숫자만 말한다", 백테스트 기반
+- **산출물:** 종목별 지표 테이블 + 기계적 시그널 (Oversold/Neutral/Overbought)
+- **금지:** 이 대시보드는 "매수/매도" 의견을 내지 않음. 숫자만 제시.
 
-### 5-M. **Chart Moderator** 🆕
-- **역할:** 4인의 기술적 뷰 종합, 진입/청산 타이밍 합의
-- **산출물:** 종목별 기술적 등급 (Strong Buy/Buy/Neutral/Sell) + 진입 구간 + 손절 라인
+### 5-2. **The Human TA Scanner (인간 전문가 뷰 수집)** 🆕
+- **역할:** 실제 인간 기술적 분석 전문가의 공개 뷰를 검색/참조
+- **소스 우선순위:**
+  1. **TradingView Ideas** — `web_fetch("https://www.tradingview.com/symbols/{TICKER}/ideas/")` 상위 인기 아이디어
+  2. **StockCharts/ChartSchool 블로그** — 전문가 차트 분석
+  3. **Twitter/X TA 커뮤니티** — 유명 차티스트 (@Trader_XO, @CryptoCred 등)
+  4. **YouTube TA 채널** — 최근 48h 이내 종목 분석 영상
+- **수집 항목:**
+  - 전문가 이름/핸들
+  - 판정 (Bullish/Bearish/Neutral)
+  - 근거 (패턴, 지지/저항선, 목표가)
+  - 게시 시점 (48h 이내만)
+- **금지:** LLM이 인간 전문가의 뷰를 "생성"하는 것. 반드시 실제 소스 링크 첨부.
+- **산출물:** 종목별 인간 TA 컨센서스 (N명 중 M명 Bullish 등)
+
+### 5-3. **The Structure Reader (구조적 위치 판독)** ⬆️개편
+- **역할:** 5-1 정량 데이터 + 5-2 인간 뷰를 종합하여 **구조적 위치** 판독
+- **판독 항목:**
+  1. **추세 위치**: 상승/하락/횡보 (EMA 배열 + ADX로 기계적 판정)
+  2. **과매수/과매도**: RSI + Stochastic + BB 위치 종합
+  3. **거래량 확인**: OBV 추세 vs 가격 추세 일치 여부
+  4. **변동성 상태**: ATR 대비 현재 움직임 크기
+  5. **인간 전문가 컨센서스**: 5-2 결과 반영
+- **산출물:** 종목별 기술적 등급
+
+| 등급 | 정의 | 조건 |
+|------|------|------|
+| 🟢 Tech Favorable | 추세+모멘텀+인간뷰 정렬 | EMA 정배열 + RSI 40-65 + 인간 60%+ Bullish |
+| 🟡 Tech Neutral | 혼조 또는 비추세 | ADX<20 또는 시그널 상충 |
+| 🔴 Tech Unfavorable | 하락추세+과매수 또는 붕괴 | EMA 역배열 + 인간 60%+ Bearish |
+| ⚪ Oversold Bounce | 극단적 과매도 (역발상 기회) | RSI<30 + Stoch<20 + BB 하단 이탈 |
+
+- **중요:** 이 등급은 L1-L4 판단을 **override 하지 않음**. 타이밍 보조 역할만.
+
+### 5-M. **Technical Moderator** ⬆️개편
+- **역할:** 5-1~5-3 종합하여 Allocator에게 타이밍 보조 의견 전달
+- **원칙:**
+  - "L1-L4가 매수인데 L5가 과매수" → 진입 대기 권고 (override 아님)
+  - "L1-L4가 매수이고 L5가 과매도" → 진입 적극 권고
+  - L5 단독으로 매수/매도 의견 불가 — 반드시 상위 Layer와 결합
+- **솔직함 규칙:** 인간 전문가 뷰를 찾지 못한 종목은 "인간 TA 뷰 미확보 — 정량 지표만으로 판단" 명시
 
 ---
 
@@ -230,7 +268,7 @@
 | Sector | 3 | 1 | 4 |
 | Value Chain | 2 | 1 | 3 |
 | Company | 3 | 1 | 4 |
-| Chart | 4 | 1 | 5 |
+| Technical (v2 Hybrid) | 3 (Quant+Human+Structure) | 1 | 4 |
 | **Cross-Layer (Constraint)** | **1 (Bottleneck Hunter)** | — | **1** |
 | **Synthesis** | **1 (Allocator)** | — | **1** |
 | **Total** | **19** | **5** | **24** |
