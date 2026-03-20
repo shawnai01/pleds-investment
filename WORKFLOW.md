@@ -103,6 +103,18 @@
 4. **투표:** 기술적 등급 + 진입 구간 + 손절 라인
 5. **산출물:** `layers/L5-chart/signals.md` 업데이트
 
+### Phase 4.5: Technical Data Pipeline (~자동)
+
+**절차:**
+1. `bash data/collect-indicators.sh` — Twelve Data에서 OHLCV + RSI/MACD/BB/ADX 수집
+2. `python3 data/generate-dashboard.py` — 시계열 분석 + TECHNICAL-DASHBOARD.md 생성
+3. 대시보드의 기계적 등급(🟢/🟡/🔴/⚪)을 Phase 6 Allocator에게 전달
+
+**원칙:**
+- 대시보드는 팩트(숫자+기계적 판정)만 제공. LLM TA 의견 금지.
+- 시계열 데이터는 `data/` 디렉토리에 일 1회 누적 적재.
+- L5는 L1-L4를 override하지 않음 — 타이밍 보조 역할.
+
 ### Phase 6: Synthesis — Conviction Convergence (~10분)
 
 **참여:** The Allocator (수석 투자 책임자)

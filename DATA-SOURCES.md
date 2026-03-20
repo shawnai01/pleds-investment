@@ -55,7 +55,7 @@
 | MVRV | Glassnode / CoinMetrics | — | ❌ API 키 필요 (유료) |
 | BTC Dominance | CoinGecko API ✅ | TradingView | ✅ 가능 |
 | **기술지표 (RSI/MACD/BB/EMA/ADX/Stoch/ATR/OBV)** | **Twelve Data API** | — | ✅ 작동 확인 |
-| **인간 TA 뷰** | TradingView Ideas (web_fetch) | StockCharts/X/YouTube | ⚠️ 소스별 가용성 차이 |
+| **기술지표 시계열 (로컬)** | `data/indicators/*.json` (Twelve Data 적재) | 일 1회 자동 수집 | ✅ 로컬 축적 |
 | Funding Rates | CoinGecko derivatives API | Coinglass | ⚠️ 제한적 |
 | 기업 재무 (EPS, EBITDA) | SEC EDGAR | Yahoo Finance | ✅ 가능 |
 | FOMC 결정 | Fed 프레스릴리즈 | CNBC (browser) | ⚠️ 타이밍 주의 |

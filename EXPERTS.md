@@ -181,20 +181,18 @@
 - **산출물:** 종목별 지표 테이블 + 기계적 시그널 (Oversold/Neutral/Overbought)
 - **금지:** 이 대시보드는 "매수/매도" 의견을 내지 않음. 숫자만 제시.
 
-### 5-2. **The Human TA Scanner (인간 전문가 뷰 수집)** 🆕
-- **역할:** 실제 인간 기술적 분석 전문가의 공개 뷰를 검색/참조
-- **소스 우선순위:**
-  1. **TradingView Ideas** — `web_fetch("https://www.tradingview.com/symbols/{TICKER}/ideas/")` 상위 인기 아이디어
-  2. **StockCharts/ChartSchool 블로그** — 전문가 차트 분석
-  3. **Twitter/X TA 커뮤니티** — 유명 차티스트 (@Trader_XO, @CryptoCred 등)
-  4. **YouTube TA 채널** — 최근 48h 이내 종목 분석 영상
-- **수집 항목:**
-  - 전문가 이름/핸들
-  - 판정 (Bullish/Bearish/Neutral)
-  - 근거 (패턴, 지지/저항선, 목표가)
-  - 게시 시점 (48h 이내만)
-- **금지:** LLM이 인간 전문가의 뷰를 "생성"하는 것. 반드시 실제 소스 링크 첨부.
-- **산출물:** 종목별 인간 TA 컨센서스 (N명 중 M명 Bullish 등)
+### 5-2. **The Time Series Analyst (시계열 분석)** ⬆️v3
+- **역할:** 스냅샷이 아닌 **시계열 추세**를 분석하여 의미 있는 패턴 탐지
+- **데이터:** 로컬 적재된 30일+ 지표 시계열 (`data/indicators/`, `data/ohlcv/`)
+- **분석 항목:**
+  1. **RSI 추세**: 단순 30 vs "60→45→38→30 하락 중" — 방향이 핵심
+  2. **MACD 히스토그램 추세**: 감소/증가 속도, 제로 크로스 임박 여부
+  3. **BB Squeeze/Expansion**: 밴드 폭 변화 → 변동성 폭발 예측
+  4. **다이버전스 탐지**: 가격 vs RSI/OBV 방향 불일치 → 반전 신호
+  5. **EMA 배열**: 정배열(bullish)/역배열(bearish)/크로스 임박
+  6. **거래량 확인**: 가격 움직임 + OBV 추세 일치 여부
+- **자동화:** `data/generate-dashboard.py`가 기계적으로 분석 → `TECHNICAL-DASHBOARD.md` 생성
+- **금지:** LLM이 지표 숫자를 보고 주관적 TA 의견 생성. 대시보드의 기계적 판정만 사용.
 
 ### 5-3. **The Structure Reader (구조적 위치 판독)** ⬆️개편
 - **역할:** 5-1 정량 데이터 + 5-2 인간 뷰를 종합하여 **구조적 위치** 판독
