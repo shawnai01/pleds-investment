@@ -2,6 +2,13 @@
 
 > 원칙: API > 스크래핑 > 추정(금지). 모든 데이터는 2개+ 소스 교차검증.
 
+## ⚠️ 주식 시세 수집 필수 규칙
+1. **1차**: Twelve Data API (`time_series`, 800 req/day) — 가장 안정적
+2. **2차**: Alpha Vantage API (`GLOBAL_QUOTE`, 25 req/day) — 교차검증용
+3. **3차(백업)**: Yahoo v8 API — 소형주 페이지 로드 불안정, 최후 수단
+4. **금지**: Yahoo 웹스크래핑(web_fetch)으로 주가 수집 시도 — 소형주/ETF 실패율 높음
+5. **규칙**: 1차 실패 시 반드시 2차 시도. 양쪽 실패 시 "[수집 실패]" 명시. 절대 생략 금지.
+
 ## 현재 상태 (2026-03-19 기준)
 
 ### ✅ 정상 작동
@@ -40,7 +47,7 @@
 | 데이터 항목 | 1차 소스 | 2차 소스 (교차검증) | 현재 상태 |
 |------------|----------|-------------------|----------|
 | BTC/ETH 가격 | CoinGecko API ✅ | Yahoo Finance | ✅ 가능 |
-| 주식 시세 (SPY, QQQ 등) | Alpha Vantage (GLOBAL_QUOTE) | Yahoo Finance | ✅ 교차검증 가능 |
+| 주식 시세 (SPY, QQQ 등) | **Twelve Data** (time_series, 800/day) | Alpha Vantage (GLOBAL_QUOTE, 25/day) | ✅ 교차검증 가능 |
 | FFR (기준금리) | **FRED API** (DFEDTARU/DFEDTARL) | Fed 프레스릴리즈 | ✅ 작동 |
 | 2Y/10Y 금리 | FRED API (DGS2, DGS10) | Yahoo Finance (^TNX) | ✅ 작동 |
 | VIX | **Yahoo v8 (^VIX, 당일)** | FRED VIXCLS (1일 지연) | ✅ Yahoo 우선 |
