@@ -310,6 +310,52 @@
 
 ---
 
+### Phase 7: Delivery (~09:00 KST)
+
+**Shawn에게 텔레그램 브리핑 전송:**
+```
+🔎 PLEDS 일일 브리핑 [날짜]
+
+📊 Macro Regime: [Risk-On/Neutral/Risk-Off] (확률 X%)
+🏭 유망 산업: [Top 3]
+📈 투자 액션:
+  - [종목] [BUY/SELL/HOLD] [사이즈%] [근거 1줄]
+  - ...
+⚠️ Price Drop Triage: [해당 종목 있으면]
+⚠️ 리스크 알림: [있으면]
+🔗 상세: [파일 링크]
+```
+
+---
+
+### Phase 8: PT Recording (Prospective Tracking 기록)
+
+> PLEDS의 모든 판단은 PT 시스템에 기록된다. 이 단계를 건너뛸 수 없다.
+
+**절차:**
+1. `tracking/judgments/YYYY-MM-DD-TICKER.md` 생성
+   - 인풋 (Shawn 요청/맥락)
+   - 판단 시점 데이터 스냅샷 (주가, VIX, Regime)
+   - 각 Layer 판단 + Critic 결과 (survive/revise/abandon)
+   - Conviction Card (C1-C4)
+   - 최종 Action
+2. Checkpoint 날짜 설정 (판단일 +30d/+90d/+180d/+1yr)
+3. `tracking/accuracy.md` 판정 기록 테이블에 행 추가
+4. git commit + push
+
+**주간 리뷰 (일요일)에 PT 추가 작업:**
+- 전 judgment의 현재 주가 수집
+- Kill Condition / Catalyst 발생 체크
+- Checkpoint 도래한 건 리뷰 작성 → `tracking/reviews/`
+- accuracy.md 업데이트
+
+**분기 리뷰에 PT 추가 작업:**
+- Feedback Signal Report 생성 → `tracking/signals/`
+- 방향 적중률, Layer별 기여도, Critic 효과, 시간축 정확도 분석
+- Shawn과 협의 → METHODOLOGY.md 개선 반영
+
+---
+
 ### 운영 규칙 (전 Phase 공통)
 
 1. **포트폴리오 변경 권한**: PLEDS는 제안만 함. Shawn이 명시적으로 변경을 말하지 않는 한 기존 배분 유지. PORTFOLIO.md 수정은 Shawn 지시 시에만.
