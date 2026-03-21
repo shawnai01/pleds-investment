@@ -1,21 +1,23 @@
 # Current Portfolio — Shawn
 
-> Last updated: 2026-03-19
+> Last updated: 2026-03-21
 
 ## Holdings
 
 | Asset | Ticker | Allocation | Category | Entry Basis |
 |-------|--------|-----------|----------|-------------|
 | Bitmine | BMNR | 35% | Crypto/ETH proxy | [SPECIFY] |
+| Energy Recovery | ERII | 10% | Water/Desal bottleneck | ~$9.73 (2026-03-21) |
 | Circle | CRCL | 10% | Stablecoin infra | [SPECIFY] |
 | Coinbase | COIN | 5% | Crypto exchange | [SPECIFY] |
 | Treasury Bills ETF | SGOV | 30% | Cash equivalent | — |
-| USD Cash | — | 20% | Cash | — |
+| USD Cash | — | 10% | Cash | — |
 
 ## Portfolio Characteristics
-- **Risk assets:** 50% (BMNR + CRCL + COIN)
-- **Safe assets:** 50% (SGOV + USD)
-- **Crypto exposure:** 50% (전체 위험자산이 크립토)
+- **Risk assets:** 60% (BMNR + ERII + CRCL + COIN)
+- **Safe assets:** 40% (SGOV + USD)
+- **Crypto exposure:** 50% (BMNR + CRCL + COIN)
+- **Non-crypto risk:** 10% (ERII)
 - **Single stock concentration:** BMNR 35% (⚠️ METHODOLOGY 상한 25% 초과)
 - **Theme concentration:** Crypto 50% (⚠️ METHODOLOGY 상한 40% 초과)
 
