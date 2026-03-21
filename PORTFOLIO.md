@@ -4,14 +4,14 @@
 
 ## Holdings
 
-| Asset | Ticker | Allocation | Category | Entry Basis |
-|-------|--------|-----------|----------|-------------|
-| Bitmine | BMNR | 35% | Crypto/ETH proxy | [SPECIFY] |
-| Energy Recovery | ERII | 10% | Water/Desal bottleneck | ~$9.73 (2026-03-21) |
-| Circle | CRCL | 10% | Stablecoin infra | [SPECIFY] |
-| Coinbase | COIN | 5% | Crypto exchange | [SPECIFY] |
-| Treasury Bills ETF | SGOV | 30% | Cash equivalent | — |
-| USD Cash | — | 10% | Cash | — |
+| Asset | Ticker | Allocation | Category | Entry Basis | Current | P&L |
+|-------|--------|-----------|----------|-------------|---------|-----|
+| Bitmine | BMNR | 35% | Crypto/ETH proxy | $18 | $20.94 | **+16.3%** |
+| Energy Recovery | ERII | 10% | Water/Desal bottleneck | $9.73 | $9.73 | 0% |
+| Circle | CRCL | 10% | Stablecoin infra | $105 | $126.03 | **+20.0%** |
+| Coinbase | COIN | 5% | Crypto exchange | $204 | $197.50 | **-3.2%** |
+| Treasury Bills ETF | SGOV | 30% | Cash equivalent | — | — | — |
+| USD Cash | — | 10% | Cash | — | — | — |
 
 ## Portfolio Characteristics
 - **Risk assets:** 60% (BMNR + ERII + CRCL + COIN)
