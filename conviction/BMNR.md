@@ -30,24 +30,26 @@
 ```
 [THESIS] MSTR 유비: 2022 crypto winter → 생존 → 2024 mNAV 폭등
 
-한계/차이점:
-1. MSTR은 기존 소프트웨어 사업의 현금흐름이 있었음 (BMNR은 순수 treasury play)
-2. MSTR의 CEO Saylor는 10년+ 트랙레코드 (BMNR은 3인 팀, 불투명)
-3. BTC vs ETH의 시장 인식과 규제 리스크 차이
-4. 시장 사이클 위치 차이 (MSTR 2020 = 초기, BMNR 2025 = 중기?)
+한계/차이점 (2026-03-22 SEC Filing 기반 업데이트):
+1. MSTR: SW 사업 $477M/yr | BMNR: 스테이킹 $180M/yr [FACT] — 갭 축소
+2. MSTR: Saylor 10yr+ | BMNR: Tom Lee Chairman (2025 합류) — 갭 축소
+3. MSTR: 전환사채 $7.2B | BMNR: 전환사채 ❌ [FACT] — 핵심 차이
+4. MSTR: 관리된 희석 | BMNR: 3개월 74% 희석 [FACT] — 핵심 위험
+5. BTC vs ETH: 스테이킹 수익 유무 — BMNR 강점
 
-→ 유비 유효성: 50% (부분 적용)
+→ 유비 유효성: 40% (하향 조정, 전환사채 부재 확인)
+→ BMNR 고유 강점: 스테이킹 수익, ETH supply 3.8% 점유
 ```
 
 ### Management Will Tracker
 | 항목 | 평가 | 근거 |
 |------|------|------|
-| Insider Transactions | 🟡 | [확인 필요] |
-| Capital Allocation | 🟡 | Treasury 집중, 기타 불투명 |
-| Guidance Behavior | 🟡 | 데이터 부족 |
-| Skin in the Game | 🟡 | 3인 팀 지분율 불명확 |
-| 말 vs 행동 | 🟡 | 데이터 부족 |
-| **종합** | 🟡 **Neutral** | 3인 조직, 불투명 |
+| Insider Transactions | 🟡 | [SEC DEF 14A 확인 필요] |
+| Capital Allocation | 🟢 | [FACT] ETH 4.6M 토큰, $10B+ 집중 |
+| Guidance Behavior | 🟢 | [FACT] 50+ 8-K/yr, 적극적 공시 |
+| Skin in the Game | 🟡 | Tom Lee Chairman, 기관투자자 다수 |
+| 말 vs 행동 | 🟢 | [FACT] "Alchemy of 5%" 76% 달성 |
+| **종합** | 🟢 **Positive** | Tom Lee 합류, 기관투자자 다수, 공시 투명 |
 
 ### Kill Condition
 1. **🔴 크립토 공통 Kill: BTC $60,000 붕괴 임박 시 전량 매도** → 하락 사이클 확인 후 재진입
@@ -81,6 +83,31 @@
 | 2026-03-19 | PLEDS 전문가 토론 | — | MSTR analogy 50% valid | ⭐ 유지 |
 | 2026-03-20 | 가격 $21.14 (-1.3%) | — | Kill 미충족 | ⭐ 유지 |
 | 2026-03-21 | 가격 $20.94 (주간 -10.47%) | **A: 매크로 selloff** | VIX 27, 글로벌 리스크오프 | ⭐ 유지 |
+| 2026-03-22 | **SEC Filing 팩트체크** | — | 아래 상세 | ⭐ 유지 (리스크 상향) |
+
+### 2026-03-22 SEC Filing Factcheck 결과
+
+**소스**: `projects/pleds/debates/2026-03-22-bmnr-factcheck.md`
+
+| 조사 항목 | 결과 | 평가 |
+|----------|------|------|
+| 전환사채 | ❌ 없음 | MSTR 대비 약점 |
+| ATM 프로그램 | ✅ $20M, 활발 사용 | 희석 지속 |
+| 희석률 | 3개월 +74% | ⚠️ 매우 높음 |
+| ETH 보유 | 4.6M 토큰 ($10B) | ✅ 공격적 매입 |
+| 스테이킹 수익 | $180M/yr (annualized) | ✅ MSTR에 없는 강점 |
+| D/E Ratio | 2.1% | ✅ 사실상 무차입 |
+| 기관투자자 | ARK, Pantera, Founders Fund 등 | ✅ credibility |
+
+**Delta Summary**:
+- MSTR 유비: 50% → **40%** (전환사채 부재 확인)
+- 현금흐름: 부재 → **스테이킹 $180M/yr** (상향)
+- 경영진: 불투명 → **Tom Lee + 기관투자자** (상향)
+- 희석 리스크: 불명확 → **74%/3개월 확인** (주의)
+
+**결론**: mNAV 확장 메커니즘 **부분적 존재**, MSTR 대비 약함, 스테이킹 수익이 일부 보완
+
+---
 
 ### 2026-03-21 Price Drop Triage
 **트리거**: 주간 -10.47% (Triage 발동)
@@ -99,16 +126,28 @@
 
 > **"이 기업에 인생을 걸 수 있는가?"**
 
-**현재 답변**: 아직 아니다.
+**현재 답변**: 아직 아니다. 하지만 이해도 상승.
 
-**이유**:
-1. MSTR 유비가 50%만 유효
-2. 경영진 신뢰도(Management Will)가 🟡 Neutral
-3. 순수 treasury play로 현금흐름 부재
+**SEC Filing 팩트체크 후 업데이트된 평가**:
+
+| 이전 | 현재 |
+|------|------|
+| MSTR 유비 50% | **40%** (전환사채 부재 확인) |
+| 현금흐름 부재 | **스테이킹 $180M/yr** ✅ |
+| 경영진 불투명 | **Tom Lee + 기관투자자** 🟢 |
+| 희석 리스크 불명확 | **3개월 74%** ⚠️ |
+
+**핵심 리스크 재평가**:
+1. ✅ 스테이킹 수익이 운영비 커버 가능 — 이전보다 안전
+2. ⚠️ 희석 속도 매우 빠름 — ETH 하락 시 가속화 우려
+3. ❌ 전환사채 없음 — MSTR 레버리지 메커니즘 부재
 
 **conviction 강화 조건**:
 1. ETH 본격 상승기 진입 확인
-2. 경영진 투명성 개선 (지분율 공개, 거버넌스 명확화)
+2. ~~경영진 투명성 개선~~ → ✅ Tom Lee 합류로 부분 충족
 3. mNAV premium 지속 확인
+4. 희석 속도 둔화 확인
 
-**현재 확신도**: ⭐ (관찰 유지, 추가 매수 보류)
+**현재 확신도**: ⭐ (관찰 유지, 희석 모니터링 강화)
+
+**신규 Kill Condition 추가**: 희석률 분기 100% 초과 시 재검토
