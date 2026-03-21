@@ -19,6 +19,11 @@
 └── News: 주요 헤드라인 10개
 ```
 
+**Data Source Health Check (METHODOLOGY §3-1 연동):**
+- 각 데이터 소스 응답 정상 여부 확인
+- 장애 발견 시 `[DATA SOURCE ALERT]` 발행 + 대체 소스 전환
+- 데이터 최신일 확인 (1영업일 이상 지연 시 경고)
+
 ### Phase 0.5: Data Integrity Audit
 
 **참여:** The Data Auditor (데이터 감사관)
@@ -349,6 +354,26 @@
 5. **포지션 재조정 토론** — 드리프트 체크
 6. **Conviction Journal 종합 리뷰** — 각 종목의 conviction 변화 추적
 7. **다음 주 핵심 이벤트 프리뷰** — 어닝, FOMC, CPI 등
+
+### Reality Coherence Audit (METHODOLOGY §3-3 연동)
+8. **예측 vs 실제 괴리** — 지난 7일 PLEDS 판정 vs 실제 시장 결과
+9. **Stale Thesis Detection** — 30일+ 업데이트 없는 conviction 플래그
+10. **Echo Chamber Check** — 최근 분석의 Bull/Bear 비율 점검 (80/20+ 시 경고)
+11. **Model Drift** — 밸류에이션 모델 전제 vs 현실 괴리 체크
+
+**산출물:** `audit/YYYY-WW-weekly-audit.md`
+
+---
+
+## 월간 Deep Review (매월 첫째 일요일)
+
+### Reality Coherence Audit — 월간 항목
+1. **30일 예측 적중률 계산** — 방향 적중률 60% 미만 시 시스템 재검토 트리거
+2. **Blind Spot Scan** — "우리가 보지 못하고 있는 리스크는?" (의무 실행)
+3. **데이터 인프라 감사** — 모든 소스 정상 작동 여부, Rate limit 상태
+4. **Information Source 리뷰** — 새로운 Tier 1-2 소스 발굴, 기존 소스 품질 평가
+
+**산출물:** `audit/YYYY-MM-reality-audit.md`
 
 ---
 
