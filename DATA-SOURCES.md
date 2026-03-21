@@ -2,6 +2,17 @@
 
 > 원칙: API > 스크래핑 > 추정(금지). 모든 데이터는 2개+ 소스 교차검증.
 
+## 정보 원천 신뢰도 체계 (Information Source Tier System)
+
+| Tier | 신뢰도 | 소스 예시 | PLEDS 사용 규칙 |
+|------|--------|----------|----------------|
+| **T1** | 최고 (1차 데이터) | SEC EDGAR, FRED/BLS, 기업 IR, USPTO 특허 | [FACT] 태그 허용 |
+| **T2** | 높음 (전문 분석) | 학술 논문, 국제기구 보고서, 중앙은행 발간물, Reuters/Bloomberg | [FACT] 태그 허용 |
+| **T3** | 참고 (2차 해석) | Seeking Alpha, 전문가 YouTube, 산업 블로그 | [THESIS]/[REFERENCE]로만. 편향 인지 필수 |
+| **T4** | 경계 (노이즈) | 익명 게시판, 루머, 출처 불명 SNS | PLEDS 입력 금지. [Tier 4 — 미검증] |
+
+> 인용 시 Tier 표기 의무: `[T1:SEC 10-K]`, `[T2:Fed WP]`, `[T3:SeekingAlpha]`
+
 ## ⚠️ 주식 시세 수집 필수 규칙
 1. **1차**: Twelve Data API (`time_series`, 800 req/day) — 가장 안정적
 2. **2차**: Alpha Vantage API (`GLOBAL_QUOTE`, 25 req/day) — 교차검증용
