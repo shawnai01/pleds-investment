@@ -7,7 +7,7 @@
 | Asset | Ticker | Allocation | Category | Entry Basis | Current | P&L |
 |-------|--------|-----------|----------|-------------|---------|-----|
 | Bitmine | BMNR | 35% | Crypto/ETH proxy | $18 | $20.94 | **+16.3%** |
-| Energy Recovery | ERII | 10% | Water/Desal bottleneck | $95 | $9.73 | **-89.8%** 🔴 |
+| Energy Recovery | ERII | 10% | Water/Desal bottleneck | $9.5 | $9.73 | **+2.4%** |
 | Circle | CRCL | 10% | Stablecoin infra | $105 | $126.03 | **+20.0%** |
 | Coinbase | COIN | 5% | Crypto exchange | $204 | $197.50 | **-3.2%** |
 | Treasury Bills ETF | SGOV | 30% | Cash equivalent | — | — | — |
