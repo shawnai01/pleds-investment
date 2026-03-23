@@ -1,6 +1,6 @@
 # PT 누적 적중률 대시보드
 
-> Last updated: 2026-03-22 (주간 워치독)
+> Last updated: 2026-03-24 (RDDT Full Analysis)
 
 ## 전체 요약
 | 지표 | 값 | 표본 수 |
