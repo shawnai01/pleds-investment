@@ -1,28 +1,35 @@
 # Current Portfolio — Shawn
 
-> Last updated: 2026-03-21
+> Last updated: 2026-03-24
+> Previous update: 2026-03-21
 
 ## Holdings
 
-| Asset | Ticker | Allocation | Category | Entry Basis | Current | P&L |
-|-------|--------|-----------|----------|-------------|---------|-----|
-| Bitmine | BMNR | 35% | Crypto/ETH proxy | $18 | $20.94 | **+16.3%** |
-| Energy Recovery | ERII | 10% | Water/Desal bottleneck | $9.5 | $9.73 | **+2.4%** |
-| Circle | CRCL | 10% | Stablecoin infra | $105 | $126.03 | **+20.0%** |
-| Coinbase | COIN | 5% | Crypto exchange | $204 | $197.50 | **-3.2%** |
-| Treasury Bills ETF | SGOV | 30% | Cash equivalent | — | — | — |
-| USD Cash | — | 10% | Cash | — | — | — |
+| Asset | Ticker | Shares | Entry Basis | Current Price | Market Value | Allocation | P&L |
+|-------|--------|--------|-------------|---------------|-------------|-----------|-----|
+| Bitmine | BMNR | 3,500 | $18 | $21.57 | $75,495 | 23.7% | **+19.8%** |
+| Circle | CRCL | 295 | $105 | $124.13 | $36,618 | 11.5% | **+18.2%** |
+| Energy Recovery | ERII | 3,000 | $9.5 | $9.98 | $29,940 | 9.4% | **+5.1%** |
+| Treasury Bills ETF | SGOV | 1,000 | ~$100.5 | $100.59 | $100,590 | 31.6% | — |
+| USD Cash | — | — | — | — | $76,000 | 23.9% | — |
+| **Total** | | | | | **$318,643** | **100%** | |
 
 ## Portfolio Characteristics
-- **Risk assets:** 60% (BMNR + ERII + CRCL + COIN)
-- **Safe assets:** 40% (SGOV + USD)
-- **Crypto exposure:** 50% (BMNR + CRCL + COIN)
-- **Non-crypto risk:** 10% (ERII)
-- **Single stock concentration:** BMNR 35% (⚠️ METHODOLOGY 상한 25% 초과)
-- **Theme concentration:** Crypto 50% (⚠️ METHODOLOGY 상한 40% 초과)
+- **Risk assets:** 44.6% (BMNR + CRCL + ERII)
+- **Safe assets:** 55.4% (SGOV + USD)
+- **Crypto exposure:** 35.2% (BMNR + CRCL) ✅ METHODOLOGY 상한 40% 이내
+- **Non-crypto risk:** 9.4% (ERII)
+- **Single stock concentration:** BMNR 23.7% ✅ METHODOLOGY 상한 25% 이내
+- **Theme concentration:** Crypto 35.2% ✅ 정상화 완료
+
+## 변경 이력 (2026-03-24)
+- **COIN 전량 청산** (5% → 0%): CRCL과 테마 중복, conviction 희석
+- **BMNR TRIM** (35% → 23.7%): METHODOLOGY 상한 준수 + 이익 실현
+- **Cash 확대** (10% → 23.9%): 신규 종목 진입 대기 (TOST, BLDR 등)
+- 결과: Crypto 50% → 35.2%, Risk 60% → 44.6%
 
 ## Investment Profile
-- **Seed size:** Small → 높은 요구 수익률
+- **Total portfolio:** ~$318,643
 - **Style:** 집중 투자 (3-5 종목), 똑똑하게 리스크를 지고 빠르게 시드를 불림
 - **Goal:** 비대칭 하이 리턴 탐색, 시드 극대화
 - **Risk tolerance:** High (early career) — 블랙스완만 아니면 변동성 감내
@@ -35,21 +42,34 @@
 - "100배 똑똑한 Shawn이라면?" 관점에서 의견 제시
 
 ## 크립토 공통 Kill Condition 🔴
-> **BTC $60,000 붕괴 임박 시 크립토 전 포지션(BMNR, CRCL, COIN) 손절 검토.**
+> **BTC $60,000 붕괴 임박 시 크립토 전 포지션(BMNR, CRCL) 손절 검토.**
 > 하락 사이클 확인 후 저점 재진입 전략.
-> 현재 BTC ~$70,500 — Kill까지 약 -14.9% 여유.
+> 현재 BTC $71,614 — Kill까지 약 16.2% 여유. ✅
+> 현재 ETH $2,184 — Kill $2,000까지 8.4% 여유. ⚠️
 
 ---
 
 ## BMNR Core Thesis (Shawn)
-- **전략:** MSTR 아날로지. MSTR이 2022-2023 크립토 윈터에서 낮은 mNAV 거쳤으나 구조 붕괴 없이 생존 → 이후 mNAV 배수 + BTC 가격 동시 상승으로 엄청난 수익
-- **BMNR 적용:** 시장 인식이 극도로 나쁜 지금이 매집 구간. ETH 상승기에 mNAV 배수 확장 + ETH 가격 상승의 이중 레버리지 효과
+- **전략:** MSTR 아날로지. 시장 인식이 극도로 나쁜 지금이 매집 구간. ETH 상승기에 mNAV 배수 확장 + ETH 가격 상승의 이중 레버리지 효과
 - **시간축:** 트럼프 중간선거 (2026년 11월)까지 — 블랙스완 이벤트 모니터링하며 롱 유지
 - **구조적 배경:** 트럼프 정부의 이권(크립토 친화 정책)과 얼라인
-- **리스크 인지:** 불투명성, 적자 구조는 알고 있음. 핵심은 "회사가 깨지는가?" 여부
+- **희석 분석 (2026-03-22):** Shares +113%, ETH +820%, per-share ETH +332% — 희석이 가치 증가적(accretive)
 - **Kill Condition:** 블랙스완 이벤트 (ETH 네트워크 치명적 버그, 미국 크립토 전면 금지, BMNR 사기/파산 징후)
 
-## Notes
-- BMNR: ETH treasury play, MSTR 아날로지, mNAV 배수 + ETH 가격 이중 레버리지
-- CRCL: 스테이블코인 규제 수혜, 금리 의존 리스크
-- COIN: 크립토 인프라, 거래소 + Base L2
+## CRCL Core Thesis
+- **전략:** A2A (Agent-to-Agent) 경제의 결제 인프라 독점자
+- **USDC 시총:** $75-78B (+72% YoY), 30+ 체인 확장
+- **Kill Condition:** USDC 시총 정체 또는 하락, 규제 역풍
+
+## ERII Core Thesis
+- **전략:** Water/Desal 병목 소유자, PX 독점
+- **신제품:** PX Q650 (2026-03-09 출시)
+- **Kill Condition:** Core revenue <$130M, 중국 PX 비중 5%+, 마진 <60%
+
+## 워치리스트 (Cash 25% 진입 후보)
+| 종목 | 진입 조건 | PLEDS 판정 |
+|------|----------|-----------|
+| TOST | $25 이하 | ⭐⭐ WATCH |
+| BLDR | $75-80 또는 Fed pivot | ⭐⭐ 관망 |
+| KMI | $28-30 | ⭐ WAIT |
+| LYV | $130-140 | ⭐ PASS |
