@@ -7,26 +7,31 @@
 
 | Asset | Ticker | Shares | Entry Basis | Current Price | Market Value | Allocation | P&L |
 |-------|--------|--------|-------------|---------------|-------------|-----------|-----|
-| Bitmine | BMNR | 3,500 | $18 | $21.57 | $75,495 | 23.7% | **+19.8%** |
-| Circle | CRCL | 295 | $105 | $124.13 | $36,618 | 11.5% | **+18.2%** |
-| Energy Recovery | ERII | 3,000 | $9.5 | $9.98 | $29,940 | 9.4% | **+5.1%** |
-| Treasury Bills ETF | SGOV | 1,000 | ~$100.5 | $100.59 | $100,590 | 31.6% | — |
-| USD Cash | — | — | — | — | $76,000 | 23.9% | — |
+| Bitmine | BMNR | 3,500 | $18 | $21.57 | $75,495 | 17.8% | **+19.8%** |
+| Eli Lilly | LLY | 30 | $919.60 | $919.60 | $27,588 | 6.5% | **0%** |
+| Celestica | CLS | 100 | $280.82 | $280.82 | $28,082 | 6.6% | **0%** |
+| Circle | CRCL | 295 | $105 | $124.13 | $36,618 | 8.6% | **+18.2%** |
+| Energy Recovery | ERII | 3,000 | $9.5 | $9.98 | $29,940 | 7.1% | **+5.1%** |
+| Treasury Bills ETF | SGOV | 1,000 | ~$100.5 | $100.59 | $100,590 | 23.7% | — |
+| USD Cash | — | — | — | — | $20,330 | 4.8% | — |
 | **Total** | | | | | **$318,643** | **100%** | |
 
 ## Portfolio Characteristics
-- **Risk assets:** 44.6% (BMNR + CRCL + ERII)
-- **Safe assets:** 55.4% (SGOV + USD)
-- **Crypto exposure:** 35.2% (BMNR + CRCL) ✅ METHODOLOGY 상한 40% 이내
-- **Non-crypto risk:** 9.4% (ERII)
-- **Single stock concentration:** BMNR 23.7% ✅ METHODOLOGY 상한 25% 이내
-- **Theme concentration:** Crypto 35.2% ✅ 정상화 완료
+- **Risk assets:** 46.6% (BMNR + LLY + CLS + CRCL + ERII)
+- **Safe assets:** 28.5% (SGOV + USD)
+- **Crypto exposure:** 26.4% (BMNR + CRCL) ✅ METHODOLOGY 상한 40% 이내
+- **Non-crypto risk:** 20.2% (LLY + CLS + ERII)
+- **Single stock concentration:** BMNR 17.8% ✅ METHODOLOGY 상한 25% 이내
+- **Theme concentration:** Crypto 26.4% ✅
+- **종목 수:** 5개 (BMNR, LLY, CLS, CRCL, ERII)
 
 ## 변경 이력 (2026-03-24)
+- **LLY 신규 진입** (0% → 6.5%): $919.60 × 30주. GLP-1 독점 + Orforglipron 카탈리스트
+- **CLS 신규 진입** (0% → 6.6%): $280.82 × 100주. AI 인프라 picks-and-shovels
 - **COIN 전량 청산** (5% → 0%): CRCL과 테마 중복, conviction 희석
-- **BMNR TRIM** (35% → 23.7%): METHODOLOGY 상한 준수 + 이익 실현
-- **Cash 확대** (10% → 23.9%): 신규 종목 진입 대기 (TOST, BLDR 등)
-- 결과: Crypto 50% → 35.2%, Risk 60% → 44.6%
+- **BMNR TRIM** (35% → 23.7% → 17.8%): METHODOLOGY 상한 준수 + 이익 실현
+- **Cash 사용** (23.9% → 4.8%): LLY + CLS 진입으로 $55,670 투입
+- 결과: 종목 5개, Crypto 26.4%, Risk 46.6%, Safe 28.5%
 
 ## Investment Profile
 - **Total portfolio:** ~$318,643
@@ -66,10 +71,12 @@
 - **신제품:** PX Q650 (2026-03-09 출시)
 - **Kill Condition:** Core revenue <$130M, 중국 PX 비중 5%+, 마진 <60%
 
-## 워치리스트 (Cash 25% 진입 후보)
+## 워치리스트 (Cash 4.8% + SGOV 리밸런싱 후보)
 | 종목 | 진입 조건 | PLEDS 판정 |
 |------|----------|-----------|
+| QXO | $16-17 | ⭐⭐ WATCH |
 | TOST | $25 이하 | ⭐⭐ WATCH |
 | BLDR | $75-80 또는 Fed pivot | ⭐⭐ 관망 |
-| KMI | $28-30 | ⭐ WAIT |
-| LYV | $130-140 | ⭐ PASS |
+| UBER | $70-72 지지 or $77.57 돌파 | ⭐⭐ WATCH |
+| RDDT | $120 이하 | ⭐⭐ WATCH |
+| AER | $125-130 | ⭐⭐ WATCH |
