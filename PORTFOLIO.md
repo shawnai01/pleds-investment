@@ -1,40 +1,42 @@
 # Current Portfolio — Shawn
 
-> Last updated: 2026-03-24
-> Previous update: 2026-03-21
+> Last updated: 2026-03-25
+> Previous update: 2026-03-24
 
 ## Holdings
 
 | Asset | Ticker | Shares | Entry Basis | Current Price | Market Value | Allocation | P&L |
 |-------|--------|--------|-------------|---------------|-------------|-----------|-----|
-| Bitmine | BMNR | 3,500 | $18 | $21.57 | $75,495 | 17.8% | **+19.8%** |
-| Eli Lilly | LLY | 30 | $919.60 | $919.60 | $27,588 | 6.5% | **0%** |
-| Celestica | CLS | 100 | $280.82 | $280.82 | $28,082 | 6.6% | **0%** |
-| Circle | CRCL | 295 | $105 | $124.13 | $36,618 | 8.6% | **+18.2%** |
-| Energy Recovery | ERII | 3,000 | $9.5 | $9.98 | $29,940 | 7.1% | **+5.1%** |
-| Treasury Bills ETF | SGOV | 1,000 | ~$100.5 | $100.59 | $100,590 | 23.7% | — |
-| USD Cash | — | — | — | — | $20,330 | 4.8% | — |
-| **Total** | | | | | **$318,643** | **100%** | |
+| Bitmine | BMNR | 4,000 | $18.37 | $20.95 | $83,800 | 26.1% | **+14.0%** |
+| Circle | CRCL | 600 | $104.35 | $103.73 | $62,238 | 19.4% | **-0.6%** |
+| Celestica | CLS | 100 | $280.82 | $280.82 | $28,082 | 8.7% | **0%** |
+| Energy Recovery | ERII | 3,000 | $9.5 | $9.98 | $29,940 | 9.3% | **+5.1%** |
+| Treasury Bills ETF | SGOV | 1,000 | ~$100.5 | $100.59 | $100,590 | 31.3% | — |
+| USD Cash | — | — | — | — | $5,228 | 1.6% | — |
+| **Total** | | | | | **$309,878** | **100%** | |
 
 ## Portfolio Characteristics
-- **Risk assets:** 46.6% (BMNR + LLY + CLS + CRCL + ERII)
-- **Safe assets:** 28.5% (SGOV + USD)
-- **Crypto exposure:** 26.4% (BMNR + CRCL) ✅ METHODOLOGY 상한 40% 이내
-- **Non-crypto risk:** 20.2% (LLY + CLS + ERII)
-- **Single stock concentration:** BMNR 17.8% ✅ METHODOLOGY 상한 30% 이내
-- **Theme concentration:** Crypto 26.4% ✅
-- **종목 수:** 5개 (BMNR, LLY, CLS, CRCL, ERII)
+- **Risk assets:** 63.5% (BMNR + CRCL + CLS + ERII)
+- **Safe assets:** 32.9% (SGOV + USD)
+- **Crypto exposure:** 45.5% (BMNR + CRCL) ⚠️ METHODOLOGY 상한 40% 초과
+- **Non-crypto risk:** 18.0% (CLS + ERII)
+- **Single stock concentration:** BMNR 26.1% ✅ METHODOLOGY 상한 30% 이내
+- **Theme concentration:** Crypto 45.5% ⚠️
+- **종목 수:** 4개 (BMNR, CRCL, CLS, ERII)
+- **Cash+SGOV (quasi-cash):** 32.9% ✅ 10% 최소 충족
 
-## 변경 이력 (2026-03-24)
-- **LLY 신규 진입** (0% → 6.5%): $919.60 × 30주. GLP-1 독점 + Orforglipron 카탈리스트
-- **CLS 신규 진입** (0% → 6.6%): $280.82 × 100주. AI 인프라 picks-and-shovels
-- **COIN 전량 청산** (5% → 0%): CRCL과 테마 중복, conviction 희석
-- **BMNR TRIM** (35% → 23.7% → 17.8%): METHODOLOGY 상한 준수 + 이익 실현
-- **Cash 사용** (23.9% → 4.8%): LLY + CLS 진입으로 $55,670 투입
-- 결과: 종목 5개, Crypto 26.4%, Risk 46.6%, Safe 28.5%
+## 변경 이력 (2026-03-25)
+- **LLY 전량 매도** (6.5% → 0%): $900.38 × 30주 = $27,011. 10x 포트폴리오 부적합 판단
+- **CRCL 추가매수** (8.6% → 19.4%): $103.73 × 305주 추가. 하루 -18% 폭락, 펀더멘탈 변화 없음 판단. 총 600주, 평단 $104.35
+- **BMNR 추가매수** (17.8% → 26.1%): $20.95 × 500주 추가. 총 4,000주, 평단 $18.37
+- 결과: 종목 4개, Crypto 45.5%⚠️, Risk 63.5%, Safe 32.9%
+
+## ⚠️ Risk Flag
+- **Crypto 45.5% > 40% 상한**: BMNR 26.1% + CRCL 19.4%. METHODOLOGY §12 한도 초과.
+  - Shawn 인지 하에 conviction override. 90일 후 리뷰 (2026-06-25).
 
 ## Investment Profile
-- **Total portfolio:** ~$318,643
+- **Total portfolio:** ~$309,878
 - **Style:** 집중 투자 (3-5 종목), 똑똑하게 리스크를 지고 빠르게 시드를 불림
 - **Goal:** 비대칭 하이 리턴 탐색, 시드 극대화
 - **Risk tolerance:** High (early career) — 블랙스완만 아니면 변동성 감내
@@ -49,8 +51,8 @@
 ## 크립토 공통 Kill Condition 🔴
 > **BTC $60,000 붕괴 임박 시 크립토 전 포지션(BMNR, CRCL) 손절 검토.**
 > 하락 사이클 확인 후 저점 재진입 전략.
-> 현재 BTC $71,614 — Kill까지 약 16.2% 여유. ✅
-> 현재 ETH $2,184 — Kill $2,000까지 8.4% 여유. ⚠️
+> 현재 BTC ~$70,000 — Kill까지 약 14% 여유. ⚠️
+> 현재 ETH ~$2,100 — Kill $2,000까지 ~5% 여유. 🔴
 
 ---
 
@@ -63,8 +65,15 @@
 
 ## CRCL Core Thesis
 - **전략:** A2A (Agent-to-Agent) 경제의 결제 인프라 독점자
-- **USDC 시총:** $75-78B (+72% YoY), 30+ 체인 확장
-- **Kill Condition:** USDC 시총 정체 또는 하락, 규제 역풍
+- **USDC 시총:** $81B (+30일 $10B 증가), 30+ 체인 확장
+- **Yield 규제:** Circle에 NET POSITIVE — reserve income 합법, 경쟁자 yield 차단 (PLEDS v2 검증)
+- **인사이더 매도:** 10b5-1 사전계획, CEO 미매도 — 약한 시그널
+- **ARK:** 리밸런싱 80%, 여전히 #3 포지션
+- **Kill Condition:** USDC 시총 정체 또는 하락, 규제 역풍, BTC $60K
+
+## CLS Core Thesis
+- **전략:** AI 인프라 picks-and-shovels, 데이터센터 하드웨어
+- **Kill Condition:** AI capex 감속 확인
 
 ## ERII Core Thesis
 - **전략:** Water/Desal 병목 소유자, PX 독점
@@ -82,8 +91,4 @@
 | UBER | $72 이하 | active | 2026-06-22 |
 | RDDT | $120 이하 | active | 2026-06-22 |
 | AER | $130 이하 | active | 2026-06-22 |
-
-**관리 규칙:**
-- Target price 도달 → 일일 브리핑에서 진입 검토 알림
-- Kill price 도달 → 자동 제거 + 알림
-- 만료 7일 전 → 재평가 또는 폐기
+| NVDA | $170-175 | active | 2026-06-24 |
