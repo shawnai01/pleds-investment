@@ -73,10 +73,10 @@
 
 | Card | 내용 |
 |------|------|
-| **C1 🔥 Burn?** | ⭐⭐ \| Risk:Reward = 1:3.5 \| "A2A 결제 인프라 독점자, 시장 미반영" |
-| **C2 🚪 Entry** | 진입 완료 (10%). 추가매수: $110-115 조정 시 |
-| **C3 🎯 Exit** | 6mo $150 / 1yr $200 / 3yr $350 |
-| **C4 ☠️ Kill** | FFR +150bp / USDC 시총 <$50B / 경쟁 stablecoin 40%+ |
+| **C1 🔥 Burn?** | ⭐½ \| Risk:Reward = 1:2 \| "Thesis intact, entry advantage consumed. Insiders selling." |
+| **C2 🚪 Entry** | HOLD current (8.6%). Add: $105-110 only. NO add at $124+. |
+| **C3 🎯 Exit** | 6mo $150 / 1yr $190 / 3yr $300. **Trim 20-30% at $140-145.** |
+| **C4 ☠️ Kill** | FFR +150bp / USDC <$50B / CRCL <$85 / 500K+ insider shares sold / USDC share <20% |
 
 ---
 
@@ -86,6 +86,7 @@
 |------|--------|--------|-------|----------------|
 | 2026-03-20 | $128.33 (주간 +11%) | — | RSI 71.6 과매수 조정 가능 | ⭐⭐ 유지 |
 | 2026-03-21 | $126.03 | — | 소폭 조정 | ⭐⭐ 유지 |
+| 2026-03-24 | ~$124 (Full PLEDS Re-eval) | — | 🔴 인사이더 242K주 매도, ARK 트리밍, 115% 급등 후 조정 | ⭐⭐→⭐½ 하향 |
 
 ---
 
@@ -111,4 +112,4 @@
 2. 대형 AI Agent 플랫폼의 USDC 기본 결제 채택
 3. USDC 시총 $100B 돌파
 
-**현재 확신도**: ⭐⭐ (강한 conviction, 추가 매수 기회 탐색 중)
+**현재 확신도**: ⭐½ (테시스 건재하나 R:R 악화 + 인사이더 매도. HOLD, 추가 매수 금지, $140-145 트림 준비)

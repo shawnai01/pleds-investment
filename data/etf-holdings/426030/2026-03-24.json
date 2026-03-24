@@ -1,0 +1,67 @@
+{
+  "date": "2026-03-24",
+  "ticker": "426030",
+  "holdings": [
+    {
+      "name": "엔비디아 코퍼레이션",
+      "symbol": "NVDA",
+      "weight": 7.2,
+      "shares": 278875
+    },
+    {
+      "name": "샌디스크",
+      "symbol": "SNDK",
+      "weight": 7.06,
+      "shares": 97542
+    },
+    {
+      "name": "알파벳 A",
+      "symbol": "GOOGL",
+      "weight": 5.57,
+      "shares": 122752
+    },
+    {
+      "name": "마이크론 테크놀로지",
+      "symbol": "MU",
+      "weight": 5.06,
+      "shares": 86563
+    },
+    {
+      "name": "Bloom Energy Corp",
+      "symbol": "BE",
+      "weight": 4.87,
+      "shares": 231831
+    },
+    {
+      "name": "씨게이트",
+      "symbol": "STX",
+      "weight": 4.78,
+      "shares": 79767
+    },
+    {
+      "name": "Taiwan Semiconductor Manufacturing Co Ltd ADR",
+      "symbol": "",
+      "weight": 4.07,
+      "shares": 89334
+    },
+    {
+      "name": "테슬라",
+      "symbol": "TSLA",
+      "weight": 3.82,
+      "shares": 68257
+    },
+    {
+      "name": "ASML Holding NV ADR",
+      "symbol": "",
+      "weight": 3.73,
+      "shares": 19085
+    },
+    {
+      "name": "Nasdaq 100 E-Mini Index Mar 2026",
+      "symbol": "",
+      "weight": 3.56,
+      "shares": 51
+    }
+  ],
+  "collected_at": "2026-03-24T22:52:44.551867"
+}
