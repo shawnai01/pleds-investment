@@ -6,66 +6,69 @@
 
 ## Entry Thesis
 
-- **진입 가격**: $105 (현재 $126.03, **+20.0%**)
-- **배분**: 10%
+- **진입 가격**: $105 (현재 ~$125-128, **+19-22%**)
+- **배분**: 8.6% ($318K 중 ~$27.4K)
 - **핵심 가설**: A2A 결제 인프라 독점자. USDC = AI agent 시대의 기축통화
 
 ### Causal Mechanism Map
 ```
-[AI Agent 경제] → [프로그래머블 결제 필요] → [USDC (Circle)] → [수수료 + 금리 수익]
-                                                    ↑
-                                           네트워크 효과: 에이전트 수 증가 → USDC 사용량 증가 → 해자 확대
+[Digital Commerce/DeFi/AI Agents/Cross-border Payments]
+    → [프로그래머블, 규제 준수 디지털 달러 수요]
+        → [USDC 발행 (Circle)] ← Reserve backing (T-bills) → Reserve income (issuer keeps 100%)
+            → [On-chain settlement]
+                → [Transaction fees (CPN, CCTP)]
+                → [USYC (토큰화 MMF)]
+                → [Circle Mint (기관)]
+                                    ↑
+                    [네트워크 효과 + 규제 해자 + Yield Ban Moat]
 ```
 
 **치명적 약점:**
-1. FFR(연방기금금리) 대폭 인상 시 사업 모델 타격
-2. USDC 시총 급감 (규제, 경쟁, 신뢰 상실)
-3. 경쟁 스테이블코인 (USDT, 기업발행) 점유율 확대
+1. Coinbase 수익 공유 50% — 장기 마진 제약 (구조적)
+2. CLARITY Act "간접 yield 금지" DeFi 해석 불확실성
+3. Stagflation → 크립토 시장 위축 → USDC 수요 감소
 
 **대안 경로:**
-- **USDT**: Tether, 규제 리스크 높지만 시총 1위
-- **기업발행 스테이블코인**: PayPal USD, JPM Coin — 폐쇄 생태계
-- **CBDC**: 정부 발행, 상용화 5년+
-
-**결론**: 규제 준수 + 기술 표준 선도로 A2A 결제에서 USDC가 de facto 표준 가능성 높음.
+- **USDT**: Tether, 규제 리스크 높지만 시총 1위 ($184B). GENIUS Act 준수 강제 중
+- **PYUSD**: PayPal, 5억 사용자 폐쇄 생태계. 오픈 인터넷 경쟁력 제한
+- **Bank stablecoins**: 폐쇄형. DeFi/AI agent 시장 서비스 불가
+- **Yield-bearing stablecoins**: GENIUS Act/CLARITY Act에 의해 규제 제약 (NEW)
 
 ### Historical Analogy
 ```
-[THESIS] Visa/Mastercard 초기 유비
+[THESIS] Verisign 유비 (인터넷 인프라 독점)
+- Verisign = 도메인/SSL 인증서 독점. 인터넷 성장 → 자동 수익
+- Circle = USDC 발행/관리 독점적 위치. 스테이블코인 성장 → 자동 수익
+- Verisign P/S 10-15x → 안정기 8-10x. Circle P/S ~3x = 저평가?
+한계: Verisign은 ICANN 법적 독점, Circle에는 그런 독점 없음
+유비 유효성: 55%
 
-1970년대 신용카드 인프라 → 네트워크 효과 → 지속 성장
-- 초기 낮은 수수료로 가맹점 확보 → 소비자 유입 → 가맹점 추가 유입
-- 결제 인프라 독점 → 수수료 인상 여력 확보
-
-한계/차이점:
-1. Visa/MC는 물리적 터미널 네트워크, USDC는 디지털 네이티브
-2. 규제 환경 불확실성 (크립토 vs 전통 금융)
-3. Visa/MC는 수십 년 축적, Circle은 아직 초기
-4. USDC는 금리 수익 의존도 높음 (Visa/MC는 수수료 기반)
-
-→ 유비 유효성: 60% (네트워크 효과 구조는 유사)
+[THESIS] Federated Hermes 유비 (금리 환경)
+- MMF: 금리 정체/상승기 = AUM 증가 + yield 증가 = 이중 호재
+- Circle: 금리 정체/인상 가능 + USDC $81B 가속 = 최적 환경
+유비 유효성: 65%
 ```
 
 ### Management Will Tracker
 | 항목 | 평가 | 근거 |
 |------|------|------|
-| Insider Transactions | [확인 필요] | IPO 후 데이터 확인 |
-| Capital Allocation | 🟢 | 규제 준수 투자, 기술 개발 집중 |
-| Guidance Behavior | [확인 필요] | 상장 후 첫 가이던스 대기 |
-| Skin in the Game | [확인 필요] | CEO Jeremy Allaire 지분율 |
-| 말 vs 행동 | 🟢 | IPO 약속 이행, USDC 투명성 유지 |
-| **종합** | 🟡 **Neutral** | 상장 초기, 추가 데이터 필요 |
+| Insider Transactions | 🟡 | 10b5-1 사전계획 매도 ~246K주 (시그널 약), CEO 미매도 |
+| Capital Allocation | 🟢 | CPN, USYC, 다중 체인 확장, Mastercard 파트너십 |
+| Guidance | 🟢 | 40% USDC CAGR — 현 성장률로 달성 가능 |
+| Skin in the Game | 🟢 | CEO Allaire 매도 없음 |
+| 말 vs 행동 | 🟢 | CPN 출시, Mastercard 합류, MS 임원 이사회 |
+| **종합** | **🟢 Aligned** | |
 
 ### Kill Condition
-1. **🔴 크립토 공통 Kill: BTC $60,000 붕괴 임박 시 전량 매도** → 하락 사이클 확인 후 재진입
-2. **FFR +150bp 이상 인상** — 사업 모델 재평가
-3. **USDC 시총 $50B 이하** — 손절 검토
-4. **경쟁 스테이블코인 점유율 40%+** — 손절 검토
-5. **가격 $80 이하** — 손절 검토
+1. **USDC 시총 <$50B** — 수요 구조 붕괴
+2. **CRCL <$80** — thesis stress, 매도 50%+
+3. **CLARITY Act DeFi yield 전면금지 확정** — USDC DeFi 사용 급감
+4. **경쟁 스테이블코인 점유율 40%+** (단일 경쟁자)
+5. **기한: 2027-12**
 
 ### Time Horizon
-- **주요 시점**: 2027-06 (A2A 내러티브 본격화 예상)
-- **목표**: 6mo $150 / 1yr $200 / 3yr $350
+- **주요 시점**: CLARITY Act 시행 (2026 하반기~2027), USDC $100B 돌파
+- **목표**: 6mo $150 / 1yr $190 / 3yr $300
 
 ---
 
@@ -73,10 +76,10 @@
 
 | Card | 내용 |
 |------|------|
-| **C1 🔥 Burn?** | ⭐½ \| Risk:Reward = 1:2 \| "Thesis intact, entry advantage consumed. Insiders selling." |
-| **C2 🚪 Entry** | HOLD current (8.6%). Add: $105-110 only. NO add at $124+. |
-| **C3 🎯 Exit** | 6mo $150 / 1yr $190 / 3yr $300. **Trim 20-30% at $140-145.** |
-| **C4 ☠️ Kill** | FFR +150bp / USDC <$50B / CRCL <$85 / 500K+ insider shares sold / USDC share <20% |
+| **C1 🔥 Burn?** | ⭐⭐ \| R:R 1:2.5 \| "금리 환경 반전 + yield ban moat + USDC 가속 성장. 해자 강화 중." |
+| **C2 🚪 Entry** | HOLD 8.6%. ADD: $110-115 (50-75주), $105 이하 (100주). $125+ 추가 매수 보류. USDC $100B 시 시장가(<$160). |
+| **C3 🎯 Exit** | 6mo $150 / 1yr $190 / 3yr $300. Trim: $190에서 1/3, $250에서 추가, $300에서 절반. |
+| **C4 ☠️ Kill** | USDC <$50B / CRCL <$80 / CLARITY Act DeFi yield 전면금지 / 기한: 2027-12 |
 
 ---
 
@@ -84,9 +87,10 @@
 
 | 날짜 | 이벤트 | Triage | Delta | Conviction 변화 |
 |------|--------|--------|-------|----------------|
-| 2026-03-20 | $128.33 (주간 +11%) | — | RSI 71.6 과매수 조정 가능 | ⭐⭐ 유지 |
+| 2026-03-20 | $128.33 (주간 +11%) | — | RSI 71.6 과매수 | ⭐⭐ 유지 |
 | 2026-03-21 | $126.03 | — | 소폭 조정 | ⭐⭐ 유지 |
-| 2026-03-24 | ~$124 (Full PLEDS Re-eval) | — | 🔴 인사이더 242K주 매도, ARK 트리밍, 115% 급등 후 조정 | ⭐⭐→⭐½ 하향 |
+| 2026-03-24 | ~$124 (v1 PLEDS Re-eval) | — | 🔴 인사이더 242K주 매도, ARK 트리밍 | ⭐⭐→⭐½ 하향 |
+| 2026-03-24 | ~$125-128 (v2 Deep Re-eval) | — | 🟢 Yield ban=positive, 10b5-1 재해석, 금리 반전, shelf=직원용, USDC $81B | **⭐½→⭐⭐ 상향** |
 
 ---
 
@@ -94,22 +98,24 @@
 
 > **"이 기업에 인생을 걸 수 있는가?"**
 
-**현재 답변**: 조건부 Yes.
+**현재 답변**: 조건부 Yes — 이전보다 강한 Yes.
 
-**이유**:
-1. **구조적 메가트렌드**: AI Agent 경제 확대 → 프로그래머블 결제 수요 폭발
-2. **선점 효과**: USDC가 규제 준수 스테이블코인 표준으로 자리매김
-3. **네트워크 효과**: 에이전트 수 증가 → USDC 사용량 증가 → 해자 확대의 선순환
-4. **비대칭 베팅**: 시장이 A2A 테마를 아직 가격에 반영하지 않음
+**이유 (v2 업데이트)**:
+1. **구조적 메가트렌드**: AI Agent 경제 + 크로스보더 결제 디지털화
+2. **3중 해자 확인**: 규제 해자(GENIUS Act) + 네트워크 해자(USDC $81B) + **Yield Ban 해자(경쟁자 제약)**
+3. **금리 환경 반전**: 인하 전망→정체/인상 = reserve income 보호. 이전 최대 우려 해소
+4. **인사이더 매도 재해석**: 10b5-1 사전계획, CEO 미매도 = 구조적 문제 아님
+5. **USDC 가속 성장**: $81B, 30일 $10B 증가. 40% CAGR 목표 달성 궤도
 
-**리스크**:
-1. 금리 환경 변화에 민감 (금리 수익 의존)
-2. 경쟁 스테이블코인 위협 상존
-3. 규제 불확실성
+**잔존 리스크**:
+1. Coinbase 50% 수익 공유 (구조적, 시간 필요)
+2. CLARITY Act DeFi 해석 (1년 내 정의 예정)
+3. Stagflation 매크로 리스크
 
 **conviction 강화 조건**:
-1. x402 프로토콜 채택 확대
-2. 대형 AI Agent 플랫폼의 USDC 기본 결제 채택
-3. USDC 시총 $100B 돌파
+1. USDC $100B 돌파
+2. CPN 대규모 채택 (Swift 대안)
+3. CLARITY Act DeFi yield 허용 확정
+4. Coinbase 수익 공유 비율 개선 또는 비-Coinbase 배포 50%+ 달성
 
-**현재 확신도**: ⭐½ (테시스 건재하나 R:R 악화 + 인사이더 매도. HOLD, 추가 매수 금지, $140-145 트림 준비)
+**현재 확신도**: ⭐⭐ (HOLD + 조건부 ADD 준비. $110-115에서 적극 추가 매수.)
