@@ -1,6 +1,6 @@
 # PLEDS Workflow — Step by Step
 
-> v3: 전문가 간소화 (24→15) + Regime Sentinel + Decision Tracker + Watchlist Alert
+> v3.1: 전문가 간소화 (24→18) + 전담 Critic 분리 + Regime Sentinel + Decision Tracker + Watchlist Alert
 
 ---
 
@@ -76,7 +76,7 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
 
 ### Phase 1: Layer 1 — Macro Debate (~15분)
 
-**참여 (v3):** Regime Analyst, Counter-Consensus Analyst, **The Bottleneck Hunter (Cross-Layer)**, Macro Moderator
+**참여 (v3.1):** Regime Analyst, Counter-Consensus Analyst, **The Bottleneck Hunter (Cross-Layer)**, Macro Moderator
 
 **Critic 담당:** Counter-Consensus Analyst
 
@@ -113,9 +113,9 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
 
 ### Phase 2: Layer 2 — Sector Scan (~10분)
 
-**참여 (v3):** Opportunity Scanner, **The Bottleneck Hunter (Cross-Layer)**, Sector Moderator
+**참여 (v3.1):** Opportunity Scanner, **Sector Skeptic (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer)**, Sector Moderator
 
-**Critic 담당:** Sector Moderator (겸임)
+**Critic 담당:** Sector Skeptic (전담)
 
 **Adversarial Debate 절차:**
 
@@ -146,9 +146,9 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
 
 ### Phase 3: Layer 3 — Value Chain Analysis (~10분)
 
-**참여 (v3):** Moat Analyst, **The Bottleneck Hunter (Cross-Layer, 주도적 역할)**, Value Chain Moderator
+**참여 (v3.1):** Moat Analyst, **Moat Breaker (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer, 주도적 역할)**, Value Chain Moderator
 
-**Critic 담당:** Value Chain Moderator (겸임)
+**Critic 담당:** Moat Breaker (전담)
 
 **Adversarial Debate 절차:**
 
@@ -181,7 +181,7 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
 
 ### Phase 4: Layer 4 — Company Deep Dive (~20분)
 
-**참여 (v3):** Company Analyst, **Forensic Accountant (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer)**, Company Moderator
+**참여 (v3.1):** Company Analyst, **Forensic Accountant (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer)**, Company Moderator
 
 **Critic 담당:** Forensic Accountant (전담 — 역할 강화)
 
@@ -230,9 +230,9 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
 
 ### Phase 5: Layer 5 — Chart & Timing (~15분)
 
-**참여 (v3):** Technical Dashboard (자동화), Technical Analyst, Technical Moderator
+**참여 (v3.1):** Technical Dashboard (자동화), Technical Analyst, **Signal Skeptic (전담 Critic)**, Technical Moderator
 
-**Critic 담당:** Technical Moderator (겸임)
+**Critic 담당:** Signal Skeptic (전담)
 
 **Adversarial Debate 절차:**
 

@@ -21,7 +21,7 @@
 - **Safe assets:** 28.5% (SGOV + USD)
 - **Crypto exposure:** 26.4% (BMNR + CRCL) ✅ METHODOLOGY 상한 40% 이내
 - **Non-crypto risk:** 20.2% (LLY + CLS + ERII)
-- **Single stock concentration:** BMNR 17.8% ✅ METHODOLOGY 상한 25% 이내
+- **Single stock concentration:** BMNR 17.8% ✅ METHODOLOGY 상한 30% 이내
 - **Theme concentration:** Crypto 26.4% ✅
 - **종목 수:** 5개 (BMNR, LLY, CLS, CRCL, ERII)
 

@@ -1,4 +1,4 @@
-# PLEDS Methodology v3.0
+# PLEDS Methodology v3.1
 
 > 확률 계층적 집단 전문가 토론 투자 시스템  
 > Probabilistic Layered Expert Debate System
@@ -585,7 +585,7 @@ Min Threshold = 0.10 (이 이하면 투자 안 함)
 
 ### 포지션 제한
 1. **단일 종목 MAX 30%** (2026-03-24 Shawn 승인. 근거: Kelly Half 기준 + 시드 $318K 집중 전략. 25%→30% 상향. 35%는 과대 베팅 리스크로 금지)
-2. **단일 테마 MAX 40%** (크립토 전체 = BMNR+CRCL+COIN → 재조정 검토)
+2. **단일 테마 MAX 40%** (크립토 전체 = BMNR+CRCL)
 3. **현금성 자산(SGOV + Cash) 최소 10%** (기회 포착용. SGOV는 현금성으로 간주 — Shawn 확인 2026-03-24)
 
 ### 실행 규칙
