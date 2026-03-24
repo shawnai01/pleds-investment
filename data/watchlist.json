@@ -1,0 +1,83 @@
+{
+  "watchlist": [
+    {
+      "ticker": "QXO",
+      "target_price": 17.0,
+      "target_type": "below",
+      "thesis_summary": "Industrials 혁신 플랫폼, Jackie Reses CEO, M&A 통합 플레이",
+      "kill_price": 25.0,
+      "kill_reason": "밸류에이션 과열 또는 통합 시너지 미실현 확정 시",
+      "added_date": "2026-03-24",
+      "expiry_date": "2026-06-22",
+      "source_judgment": null,
+      "conviction": 2,
+      "status": "active"
+    },
+    {
+      "ticker": "TOST",
+      "target_price": 25.0,
+      "target_type": "below",
+      "thesis_summary": "PEG 0.66 저평가, 레스토랑 OS 독점, AI 데이터 해자",
+      "kill_price": null,
+      "kill_reason": "Q1 실적 가이던스 하향 또는 경쟁 심화 확인 시",
+      "added_date": "2026-03-21",
+      "expiry_date": "2026-06-19",
+      "source_judgment": "tracking/judgments/2026-03-21-TOST.md",
+      "conviction": 2,
+      "status": "active"
+    },
+    {
+      "ticker": "BLDR",
+      "target_price": 80.0,
+      "target_type": "below",
+      "thesis_summary": "주택 건설 공급망 독점, Fed pivot 대기",
+      "kill_price": null,
+      "kill_reason": "금리 장기 고점 고착화 시",
+      "added_date": "2026-03-24",
+      "expiry_date": "2026-06-22",
+      "source_judgment": null,
+      "conviction": 2,
+      "status": "active"
+    },
+    {
+      "ticker": "UBER",
+      "target_price": 72.0,
+      "target_type": "below",
+      "thesis_summary": "Mobility + Delivery 듀얼 네트워크 효과, FCF 턴어라운드",
+      "kill_price": null,
+      "kill_reason": "AV 경쟁사 상용화 가시화 시",
+      "added_date": "2026-03-24",
+      "expiry_date": "2026-06-22",
+      "source_judgment": null,
+      "conviction": 2,
+      "status": "active"
+    },
+    {
+      "ticker": "RDDT",
+      "target_price": 120.0,
+      "target_type": "below",
+      "thesis_summary": "AI 학습 데이터 해자, 커뮤니티 플랫폼 수익화",
+      "kill_price": 180.0,
+      "kill_reason": "과열 밸류에이션, 성장 둔화 확인 시",
+      "added_date": "2026-03-24",
+      "expiry_date": "2026-06-22",
+      "source_judgment": "tracking/judgments/2026-03-24-RDDT.md",
+      "conviction": 2,
+      "status": "active"
+    },
+    {
+      "ticker": "AER",
+      "target_price": 130.0,
+      "target_type": "below",
+      "thesis_summary": "항공기 리스 독점, 신흥국 항공 수요 수혜",
+      "kill_price": null,
+      "kill_reason": "항공산업 구조적 침체 또는 부채 문제 시",
+      "added_date": "2026-03-24",
+      "expiry_date": "2026-06-22",
+      "source_judgment": null,
+      "conviction": 2,
+      "status": "active"
+    }
+  ],
+  "last_updated": "2026-03-24T11:41:41.718850"
+}

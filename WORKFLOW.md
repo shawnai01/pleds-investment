@@ -1,6 +1,6 @@
 # PLEDS Workflow — Step by Step
 
-> v2: Adversarial Debate Protocol 적용
+> v3: 전문가 간소화 (24→15) + Regime Sentinel + Decision Tracker + Watchlist Alert
 
 ---
 
@@ -18,6 +18,22 @@
 ├── Crypto: BTC, ETH, MVRV, BTC.D, USDT.D, funding rates
 └── News: 주요 헤드라인 10개
 ```
+
+**🚦 Regime Sentinel 실행 (METHODOLOGY §3-5):**
+```bash
+python3 data/regime-sentinel.py --markdown >> daily/YYYY-MM-DD.md
+```
+- 5개 지표 임계치 체크: VIX, 2-10 Spread, HY Spread, BTC Weekly, DXY Monthly
+- 🟠 경고 이상 시 Shawn 즉시 알림 (텔레그램)
+- 결과를 일일 브리핑 상단 §Regime Sentinel에 포함
+
+**📋 Watchlist Alert 실행:**
+```bash
+python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
+```
+- Target price 도달 시 진입 검토 알림
+- Kill price 도달 시 워치리스트 제거 + 알림
+- 만료 7일 이내 종목 재평가 알림
 
 **Data Source Health Check (METHODOLOGY §3-1 연동):**
 - 각 데이터 소스 응답 정상 여부 확인
@@ -60,17 +76,16 @@
 
 ### Phase 1: Layer 1 — Macro Debate (~15분)
 
-**참여:** The Machine, The Liquidity Hawk, The Cycle Sentinel, The Contrarian Catalyst, **The Bottleneck Hunter (Cross-Layer)**, Macro Moderator
+**참여 (v3):** Regime Analyst, Counter-Consensus Analyst, **The Bottleneck Hunter (Cross-Layer)**, Macro Moderator
 
-**Critic 담당:** Contrarian Catalyst (기존 역할 확장)
+**Critic 담당:** Counter-Consensus Analyst
 
 **Adversarial Debate 절차:**
 
 1. **Round 1 — 독립 제시**
    - 각 전문가가 1-2문장으로 현재 뷰 제시 (독립적, 다른 전문가 뷰 모름)
-   - The Machine: 현재 레짐 판정
-   - The Liquidity Hawk: 유동성 방향
-   - The Cycle Sentinel: 시장 온도
+   - Regime Analyst: 현재 레짐 판정 + 유동성 방향 (Dalio/Druckenmiller 관점 분리)
+   - Counter-Consensus Analyst: 시장 온도 + 역발상 관점
    - Bottleneck Hunter: 매크로 병목
 
 2. **Round 2 — Critic 반론**
@@ -98,7 +113,7 @@
 
 ### Phase 2: Layer 2 — Sector Scan (~10분)
 
-**참여:** The Disruptor, The Value Mapper, The Theme Hunter, **The Bottleneck Hunter (Cross-Layer)**, Sector Moderator
+**참여 (v3):** Opportunity Scanner, **The Bottleneck Hunter (Cross-Layer)**, Sector Moderator
 
 **Critic 담당:** Sector Moderator (겸임)
 
@@ -107,7 +122,7 @@
 1. **Round 1 — 독립 제시**
    - Macro regime을 전달받고 산업 영향 분석
    - 각 전문가가 유망/역풍 산업 3개씩 제시
-   - Theme Hunter: 비컨센서스 테마 1개 이상 의무 발굴
+   - Opportunity Scanner: 파괴적 혁신 + 비컨센서스 테마 1개 이상 의무 발굴
 
 2. **Round 2 — Critic 반론**
    - **Sector Moderator**가 각 전문가의 산업 선택에 대해 반론 제시 (의무)
@@ -131,7 +146,7 @@
 
 ### Phase 3: Layer 3 — Value Chain Analysis (~10분)
 
-**참여:** The Strategist, The Network Thinker, **The Bottleneck Hunter (Cross-Layer, 주도적 역할)**, Value Chain Moderator
+**참여 (v3):** Moat Analyst, **The Bottleneck Hunter (Cross-Layer, 주도적 역할)**, Value Chain Moderator
 
 **Critic 담당:** Value Chain Moderator (겸임)
 
@@ -166,7 +181,7 @@
 
 ### Phase 4: Layer 4 — Company Deep Dive (~20분)
 
-**참여:** The Compounder, The Catalyst Hunter, **The Forensic Accountant (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer)**, Company Moderator
+**참여 (v3):** Company Analyst, **Forensic Accountant (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer)**, Company Moderator
 
 **Critic 담당:** Forensic Accountant (전담 — 역할 강화)
 
@@ -197,7 +212,7 @@
    - Historical Analogy의 한계 지적
 
 4. **Round 3 — 재반박/수정**
-   - Compounder, Catalyst Hunter가 Forensic Accountant의 반론에 대응
+   - Company Analyst가 Forensic Accountant의 반론에 대응
    - defend / revise / abandon 선택
    - Bear Case를 반박 못하면 확신도 자동 하향
 
@@ -215,7 +230,7 @@
 
 ### Phase 5: Layer 5 — Chart & Timing (~15분)
 
-**참여:** The Quant Dashboard, The Time Series Analyst, The Structure Reader, Chart Moderator
+**참여 (v3):** Technical Dashboard (자동화), Technical Analyst, Technical Moderator
 
 **Critic 담당:** Technical Moderator (겸임)
 
@@ -224,8 +239,7 @@
 1. **Round 1 — 독립 제시**
    - Phase 4 통과 종목의 차트 분석
    - Quant Dashboard: 정량 지표 팩트 제시 (RSI, MACD, BB, EMA, ADX 등)
-   - Time Series Analyst: 시계열 추세 분석 (다이버전스, BB Squeeze 등)
-   - Structure Reader: 구조적 위치 판독
+   - Technical Analyst: 시계열 추세 + 구조적 위치 분석 (다이버전스, BB Squeeze 등)
    - 크립토: BTC, ETH 파동 카운트 + MVRV/도미넌스 분석
 
 2. **Round 2 — Critic 반론**
@@ -356,6 +370,42 @@
 
 ---
 
+### Phase 8.5: Decision Recording (포트폴리오 변경 시)
+
+> Shawn이 포트폴리오 변경을 알리면 자동 실행되는 피드백 루프
+
+**트리거:** Shawn이 "LLY 919.6에 30주 진입" 같은 포트폴리오 변경 메시지 전송
+
+**절차:**
+1. **파싱:** 메시지에서 티커, 가격, 수량, 액션(BUY/SELL/TRIM/ADD) 추출
+2. **PLEDS 직전 권고 조회:** `tracking/judgments/`에서 해당 티커 최신 분석 조회
+3. **Gap 분석:**
+   - 방향: PLEDS BUY vs Shawn BUY = ✅ 일치
+   - 가격: 권고가 vs 실행가 차이
+   - 비중: 권고 비중 vs 실제 비중 차이
+   - 시점: 권고일 vs 실행일 차이
+4. **Decision 기록:** `tracking/decisions/YYYY-MM-DD-TICKER-ACTION.md` 생성
+5. **복기 날짜 설정:** +30d, +90d
+6. git commit + push
+
+**Gap 유형:**
+| 유형 | 정의 | 복기 시 평가 |
+|------|------|-------------|
+| ✅ 일치 | 권고와 동일 방향 + 유사 시점 | 시스템 정확도에 반영 |
+| 🟡 시점 차이 | 같은 방향, 다른 타이밍 | 누가 더 좋은 타이밍이었나? |
+| 🟡 사이즈 차이 | 같은 방향, 다른 비중 | 누구의 사이징이 더 적정했나? |
+| 🔴 방향 차이 | 시스템 vs Shawn 반대 방향 | 누가 맞았나? 패턴 분석 |
+| ⚪ PLEDS 미분석 | 시스템 권고 없음 | 사후 분석 권장 |
+
+**주간 리뷰 (일요일)에 Decision 추가 작업:**
+- 전 decisions/ 파일의 복기 날짜 체크
+- 도래한 복기 실행 → 결과 기록 (주가, 수익률, 평가)
+- `tracking/decisions-summary.md` 분기별 집계
+
+**템플릿:** `tracking/decisions/TEMPLATE.md` 참조
+
+---
+
 ### 운영 규칙 (전 Phase 공통)
 
 1. **포트폴리오 변경 권한**: PLEDS는 제안만 함. Shawn이 명시적으로 변경을 말하지 않는 한 기존 배분 유지. PORTFOLIO.md 수정은 Shawn 지시 시에만.
@@ -396,7 +446,7 @@
 1. **주간 성과 리뷰** — 포트폴리오 수익률 vs 벤치마크
 2. **전문가 적중률 업데이트** — 지난주 판정 vs 실제
 3. **Adversarial Debate 회고** — 어떤 논거가 살아남았고, 어떤 것이 폐기되었나
-4. **신규 테마 브레인스토밍** — Theme Hunter 주도
+4. **신규 테마 브레인스토밍** — Opportunity Scanner 주도
 5. **포지션 재조정 토론** — 드리프트 체크
 6. **Conviction Journal 종합 리뷰** — 각 종목의 conviction 변화 추적
 7. **다음 주 핵심 이벤트 프리뷰** — 어닝, FOMC, CPI 등
