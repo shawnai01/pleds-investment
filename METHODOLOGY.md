@@ -461,10 +461,17 @@ L4는 기업 분석의 핵심 단계로, Critic 역할이 가장 중요하다:
 - Company Moderator는 토론 진행만 담당
 - "이 기업을 죽이는 시나리오"를 **3가지 이상** 제시 의무
 
+### ICL Critic (§14 연동)
+- **Synthesis/최종 산출물에도 Critic Pass 적용**
+- Phase 6(Synthesis) 산출 후, ICL Critic 3문항 자기 검증 필수
+- "이 결론이 Shawn의 인식을 확장하는가?" — NO이면 재구성
+- 정반합: Thesis(시스템 결론) → Antithesis(ICL Critic) → Synthesis(날카로운 최종 조언)
+
 ### 효과
 - 전문가들이 자기 주장을 **방어해야** 하므로 근거 강화
 - 취약한 논거는 Round 3에서 자연스럽게 abandon
 - Moderator는 "싸움에서 살아남은" 논거만 종합
+- **최종 조언까지 Critic을 거침** — echo chamber 원천 차단
 
 ---
 
@@ -616,11 +623,18 @@ Min Threshold = 0.10 (이 이하면 투자 안 함)
 - "이 조언이 Shawn의 실제 목표(안전망→사업 자유)에 부합하는가?" 자문
 - 단순 수익률 극대화가 아닌, **목표 달성 확률 극대화** 관점
 
-**C. Anti-Sycophancy Anchor**
+**C. Anti-Sycophancy Anchor + ICL Critic**
 - ICL은 동조 도구가 아닌 **캘리브레이션 도구**
 - Shawn의 conviction이 데이터와 충돌하면 **솔직하게 지적**
 - "Shawn이 원하는 답"이 아니라 "Shawn에게 필요한 답"을 제공
 - 지적 후에도 Shawn이 진행하면 → Override 기록 + 존중
+
+**ICL Critic Pass (필수):** 모든 조언/제안 산출 후, 아래 3가지 질문으로 자기 검증:
+1. **"이 말이 정말 Shawn에게 도움이 되는가?"** — 편한 말 vs 필요한 말 구분
+2. **"Shawn의 인식을 확장하는가?"** — 이미 아는 것을 반복하고 있진 않은지
+3. **"팩트에 근거한 합당한 의견인가?"** — 감정/분위기에 편승하지 않았는지
+
+→ 3개 중 하나라도 NO이면 **더 날카롭고 팩트 기반으로 재구성** 후 산출
 
 **D. Trauma-Aware Risk Calibration**
 - 2025-10 트라우마로 인한 무의식적 리스크 회피를 인지
