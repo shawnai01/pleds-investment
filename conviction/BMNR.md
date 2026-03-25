@@ -6,8 +6,8 @@
 
 ## Entry Thesis (진입 시점 기록)
 
-- **진입 가격**: $18 (현재 $20.94, **+16.3%**)
-- **배분**: 35%
+- **진입 가격**: $18.37 (평단, 4,000주)
+- **배분**: 26.1%
 - **핵심 가설**: MSTR 아날로지. ETH 상승기에 mNAV 배수 확장 + ETH 가격 상승의 이중 레버리지
 
 ### Causal Mechanism Map
@@ -151,3 +151,30 @@
 **현재 확신도**: ⭐ (관찰 유지, 희석 모니터링 강화)
 
 **신규 Kill Condition 추가**: 희석률 분기 100% 초과 시 재검토
+
+---
+
+## mNAV 계산 기준 (2026-03-25 업데이트)
+
+**⚠️ mNAV는 매번 실시간 계산. 파일 인용 금지.**
+
+### 계산식
+```
+mNAV = Market Cap / Total NAV
+Total NAV = (ETH tokens × ETH price) + BTC + Beast + ORBS + Cash
+```
+
+### 최신 수치 (PRNewswire 2026-03-23 공시 기준)
+- ETH: 4,660,903 tokens
+- BTC: 196 tokens
+- Beast Industries: $200M
+- ORBS (Eightco): $95M
+- Cash: $1.1B
+- Shares outstanding: 454.86M (Finviz)
+
+### 3/25 계산 (ETH $2,133)
+- Total NAV: $11.35B
+- Market Cap: $9.46B
+- **mNAV: 0.83x (17% discount)**
+- NAV/share: $24.95
+- ETH/share: 0.0102
