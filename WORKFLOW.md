@@ -1,6 +1,7 @@
 # PLEDS Workflow — Step by Step
 
-> v3.2: 2-Track Daily Mode + Weekly Strategic Review 자동화 (2026-03-26)
+> v4.1 (2026-03-26): 감사 반영 — Hypothesis Mode, 3-Agent Triangulation, Phase 순서 정리
+> v3.2 (2026-03-26): 2-Track Daily Mode + Weekly Strategic Review 자동화
 > v3.1: 전문가 간소화 (24→18) + 전담 Critic 분리 + Regime Sentinel + Decision Tracker + Watchlist Alert
 
 ---
@@ -138,13 +139,12 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
 **Adversarial Debate 절차:**
 
 1. **Round 1 — 독립 제시**
-   - 각 전문가가 1-2문장으로 현재 뷰 제시 (독립적, 다른 전문가 뷰 모름)
    - Regime Analyst: 현재 레짐 판정 + 유동성 방향 (Dalio/Druckenmiller 관점 분리)
-   - Counter-Consensus Analyst: 시장 온도 + 역발상 관점
    - Bottleneck Hunter: 매크로 병목
+   - *Counter-Consensus Analyst는 Round 1에 참여하지 않음 (Critic 전담, v4.1)*
 
 2. **Round 2 — Critic 반론**
-   - **Contrarian Catalyst**가 각 전문가의 주장에 대해 구체적 반론 제시 (의무)
+   - **Counter-Consensus Analyst**가 Regime Analyst의 주장에 구체적 반론 제시 (의무)
    - "모두가 동의하면 틀렸다" — 컨센서스의 취약점 공격
    - 각 주장에 대해 최소 1개 반론 의무
 
@@ -296,6 +296,20 @@ Loop 5: → [5차 병목: ___]
 
 ---
 
+### Phase 4.5: Technical Data Pipeline (~자동)
+
+**절차:**
+1. `bash data/collect-indicators.sh` — Twelve Data에서 OHLCV + RSI/MACD/BB/ADX 수집
+2. `python3 data/generate-dashboard.py` — 시계열 분석 + TECHNICAL-DASHBOARD.md 생성
+3. 대시보드의 기계적 등급(🟢/🟡/🔴/⚪)을 Phase 6 Allocator에게 전달
+
+**원칙:**
+- 대시보드는 팩트(숫자+기계적 판정)만 제공. LLM TA 의견 금지.
+- 시계열 데이터는 `data/` 디렉토리에 일 1회 누적 적재.
+- L5는 L1-L4를 override하지 않음 — 타이밍 보조 역할.
+
+---
+
 ### Phase 5: Layer 5 — Chart & Timing (~15분)
 
 **참여 (v3.1):** Technical Dashboard (자동화), Technical Analyst, **Signal Skeptic (전담 Critic)**, Technical Moderator
@@ -327,20 +341,6 @@ Loop 5: → [5차 병목: ___]
 5. **투표:** 기술적 등급 + 진입 구간 + 손절 라인
 
 **산출물:** `layers/L5-chart/signals.md` 업데이트
-
----
-
-### Phase 4.5: Technical Data Pipeline (~자동)
-
-**절차:**
-1. `bash data/collect-indicators.sh` — Twelve Data에서 OHLCV + RSI/MACD/BB/ADX 수집
-2. `python3 data/generate-dashboard.py` — 시계열 분석 + TECHNICAL-DASHBOARD.md 생성
-3. 대시보드의 기계적 등급(🟢/🟡/🔴/⚪)을 Phase 6 Allocator에게 전달
-
-**원칙:**
-- 대시보드는 팩트(숫자+기계적 판정)만 제공. LLM TA 의견 금지.
-- 시계열 데이터는 `data/` 디렉토리에 일 1회 누적 적재.
-- L5는 L1-L4를 override하지 않음 — 타이밍 보조 역할.
 
 ---
 
@@ -495,24 +495,6 @@ Loop 5: → [5차 병목: ___]
 5. **GitHub 아카이빙**: 모든 일일 브리핑, 데이터 검증, 포트폴리오 변경을 git commit + push.
 
 6. **Adversarial Debate 기록**: 각 Phase의 Round 2 반론 + Round 3 대응을 명시적으로 기록. "어떤 논거가 살아남았는가"를 추적 가능하게.
-
----
-
-### Phase 7: Delivery (~09:00 KST)
-
-**Shawn에게 텔레그램 브리핑 전송:**
-```
-🔎 PLEDS 일일 브리핑 [날짜]
-
-📊 Macro Regime: [Risk-On/Neutral/Risk-Off] (확률 X%)
-🏭 유망 산업: [Top 3]
-📈 투자 액션:
-  - [종목] [BUY/SELL/HOLD] [사이즈%] [근거 1줄]
-  - ...
-⚠️ Price Drop Triage: [해당 종목 있으면]
-⚠️ 리스크 알림: [있으면]
-🔗 상세: [파일 링크]
-```
 
 ---
 
@@ -679,21 +661,7 @@ Loop 5: → [5차 병목: ___]
 
 9. **산출물**: `debates/bottleneck-thesis-{YYYY-MM-DD}-{테마}.md` → GitHub push
 
-### Tsunami 테마 재스캔 계획
-
-기존 7개 Tsunami 테마를 제약 조건 렌즈로 순차 재스캔:
-
-| # | 테마 | 핵심 질문 | 상태 |
-|---|------|----------|------|
-| 1 | AI Agent/A2A Economy | 결제 인프라 (CRCL) | ✅ 완료 2026-03-19 |
-| 2 | Robotics | AI 범용 조작 SW (NVDA, TXN) | ✅ 완료 2026-03-19 |
-| 3 | GLP-1 / Obesity | 펩타이드 API 제조 (Bachem, WST) | ✅ 완료 2026-03-19 |
-| 4 | Nuclear Energy | HALEU 농축 (LEU) | ✅ 완료 2026-03-19 |
-| 5 | Water Crisis | 에너지 회수 PX 독점 (ERII) | ✅ 완료 2026-03-19 |
-| 6 | Demographic → Automation | SI 인력 부족 (ISRG, TER) | ✅ 완료 2026-03-19 |
-| 7 | Synbio | 설계 지능 AI for Bio (TWST 조건부) | ✅ 완료 2026-03-19 |
-
-→ 각 테마를 1개씩 서브에이전트로 실행, 결과를 GitHub에 아카이빙
+*Tsunami 테마 7건 재스캔 완료 (2026-03-19). 결과: `debates/archive/` 참조.*
 
 ---
 
@@ -709,15 +677,4 @@ Loop 5: → [5차 병목: ___]
 | BTC ±10% 일일 변동 | Crypto 전문가 긴급 토론 |
 | C4 Kill 조건 충족 | 48시간 내 기계적 실행 |
 
----
-
-## 파일럿 런 체크리스트
-
-- [ ] 현재 포트폴리오 기준: BMNR 35%, CRCL 10%, COIN 5%, ERII 10%, SGOV 20%, USD 20%
-- [ ] Macro: 현 레짐 판정 (Adversarial Debate)
-- [ ] Sector: 유망 산업 평가 (Adversarial Debate)
-- [ ] Value Chain: Causal Mechanism Map 작성
-- [ ] Company: Management Will Tracker + Historical Analogy Engine 적용
-- [ ] Chart: 기술적 타이밍
-- [ ] Synthesis: Price Drop Triage (해당 시) + Conviction Card + Conviction Journal 업데이트
-- [ ] 결과 텔레그램 전송
+*파일럿 런 완료 (2026-03-19). 체크리스트 아카이브됨.*

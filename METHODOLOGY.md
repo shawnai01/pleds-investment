@@ -1,7 +1,9 @@
-# PLEDS Methodology v3.1
+# PLEDS Methodology v4.1
 
 > 확률 계층적 집단 전문가 토론 투자 시스템  
 > Probabilistic Layered Expert Debate System
+>
+> **변경 이력**: v3.1 (2026-03-19) → v4.0 (2026-03-26, Deep Loop/C0/VP/Edge) → v4.1 (2026-03-26, 감사 반영)
 
 ---
 
@@ -488,14 +490,26 @@ Edge Score:   [0-10, 아래 기준]
 ━━━━━━━━━━━━━━━━━━━━━━
 ```
 
-**Edge Score 산출 기준:**
+**Edge Score 산출 공식 (v4.1 명시화):**
 
-| 점수 | 정의 | 조건 |
-|------|------|------|
-| **8-10** | Strong Edge | Deep Loop Edge Test 4/4 통과 + 컨센서스와 방향 반대 + 인과 메커니즘 명확 |
-| **5-7** | Moderate Edge | Edge Test 3/4 이상 + 컨센서스와 크기/시점 차이 |
-| **2-4** | Weak Edge | Edge Test 2/4 이하 또는 컨센서스와 유사 |
-| **0-1** | No Edge | 컨센서스와 동일 = 시장 효율적 = edge 없음 |
+```
+Base Score = E통과수 × 2          (0, 2, 4, 6, 8)
+Consensus Modifier:
+  +2  컨센서스와 방향 반대 (Bull↔Bear)
+  +1  컨센서스와 크기/시점 차이 (방향 동일)
+   0  컨센서스와 동일
+Cap = 10
+
+Edge Score = min(Base + Modifier, 10)
+```
+
+| E통과수 | 컨센서스 반대 | 크기/시점 차이 | 컨센서스 동일 |
+|---------|-------------|--------------|-------------|
+| **4/4** | **10** (Strong) | 9 | 8 |
+| **3/4** | 8 | **7** (Moderate) | 6 |
+| **2/4** | 6 | 5 | **4** (Weak) |
+| **1/4** | 4 | 3 | 2 |
+| **0/4** | 2 | 1 | **0** (No Edge) |
 
 **Edge Score → 투자 행동 연결:**
 - **8-10**: 적극 포지션 구축 가치 있음 (conviction sizing)
@@ -567,6 +581,23 @@ Edge Score:   6/10 (Moderate — 인과 명확하나 규제 타이밍 불확실)
 | **R3** | 재반박/수정 | defend / revise / abandon |
 | **R4** | Moderator 평가 | **Edge Test 실시** (아래 10.2) |
 
+**"살아남은 논거" 정의 (v4.1 명시화):**
+
+R3 결과에 따라 논거의 상태가 결정된다:
+
+| R3 결과 | 상태 | Moderator 처리 |
+|---------|------|---------------|
+| **defend 성공** | ✅ 살아남음 | R4에서 인용, Edge Test 대상 |
+| **revise** | ✅ 살아남음 (수정됨) | 수정된 버전으로 R4 인용. 원본과 수정본 모두 기록 |
+| **abandon** | ❌ 사망 | R4에서 제외. "폐기 이유" 1줄 기록 |
+| **defend 실패** (Critic 반론 미반박) | ❌ 사망 | Moderator가 판정. 반론에 대한 재반박이 없거나 설득력 부족 시 |
+
+**원칙:**
+- defend와 revise는 모두 "살아남은" 것으로 간주
+- abandon만 제외됨
+- defend 실패 판정은 Moderator의 권한 (Critic 반론 > 원 주장일 때)
+- **Moderator는 R4에서 "살아남은 논거 N개 / 사망 M개"를 명시적으로 집계**
+
 ### 10.2 Outer Loop: Edge Convergence Loop (신설) 🔄
 
 > 적용 Layer: **L2 Sector, L3 Value Chain, L4 Company**
@@ -576,7 +607,7 @@ Edge Score:   6/10 (Moderate — 인과 명확하나 규제 타이밍 불확실)
 
 | # | Edge Test 질문 | YES 기준 |
 |---|---------------|----------|
-| **E1 Novelty** | 이 인사이트가 sell-side 컨센서스에 없는가? | 주요 애널리스트 보고서에서 언급되지 않은 관점 |
+| **E1 Novelty** | 이 인사이트가 sell-side 컨센서스에 없는가? | web_search로 확인: 최근 90일 내 커버리지 있는 애널리스트 보고서/PT에서 언급되지 않은 관점. 커버리지 0인 소형주는 "시장 내러티브"(SeekingAlpha, 주요 뉴스) 기준 |
 | **E2 Causality** | 명확한 인과 메커니즘이 있는가? (상관관계 아닌 인과) | "A이면 B이다"의 물리적/경제적 이유를 설명 가능 |
 | **E3 Actionability** | 이 인사이트가 실제 투자 행동을 바꾸는가? | "이걸 몰랐다면 다른 결정을 했을 것" |
 | **E4 Falsifiability** | 이 인사이트가 틀렸음이 증명될 수 있는가? | 구체적 반증 조건과 시점이 정의 가능 |

@@ -1,6 +1,7 @@
 # PLEDS Data Sources — 데이터 소스 인프라
 
 > 원칙: API > 스크래핑 > 추정(금지). 모든 데이터는 2개+ 소스 교차검증.  
+> v4.1 (2026-03-26): 감사 반영 — 완료 태스크 아카이브 정리
 > v2.1: Information Source Tier 체계 적용
 
 ---
@@ -118,31 +119,9 @@
 
 ---
 
-## 우선 확보 요청 (Shawn)
+## API 키 현황
 
-### 🔴 필수 (매일 사용)
-1. **FRED API Key** — ✅ 확보 완료
-
-### 🟡 권장 (데이터 품질 향상)
-2. **Alpha Vantage Key** — ✅ 확보 완료
-3. **Twelve Data Key** — ✅ 확보 완료
-
-### 🟢 있으면 좋음
-4. **Brave Search API** — web_search 활성화 (현재 비활성)
-
----
-
-## API 키 저장 위치
-
-키를 받으면 환경변수로 설정:
-```bash
-# ~/.zshrc 또는 ~/.bashrc에 추가
-export FRED_API_KEY="your_key_here"
-export ALPHAVANTAGE_API_KEY="your_key_here"  
-export TWELVEDATA_API_KEY="your_key_here"
-```
-
-또는 CRO에게 직접 알려주시면 PLEDS 크론잡 프롬프트에 내장합니다.
+*FRED, Alpha Vantage, Twelve Data 모두 확보 완료. `~/.zshrc` 환경변수로 설정됨.*
 
 ---
 
