@@ -1,10 +1,65 @@
 # PLEDS Workflow — Step by Step
 
+> v3.2: 2-Track Daily Mode + Weekly Strategic Review 자동화 (2026-03-26)
 > v3.1: 전문가 간소화 (24→18) + 전담 Critic 분리 + Regime Sentinel + Decision Tracker + Watchlist Alert
 
 ---
 
-## 일일 브리핑 워크플로우 (매일 09:00 KST)
+## 일일 브리핑 2-Track 시스템 (매일 09:00 KST)
+
+> **Standard Day** vs **Event Day**를 Phase 0 데이터 수집 후 기계적으로 결정한다.
+> 주관적 판단으로 모드를 선택하지 않는다.
+
+### Event Day 트리거 (하나라도 충족 시 → Full Mode)
+
+| # | 트리거 | 조건 | 데이터 소스 |
+|---|--------|------|------------|
+| E1 | FOMC/CPI/고용 발표 | 당일 또는 전일 발표 | 경제 캘린더 |
+| E2 | 보유종목 ±5% 일일 변동 | 전일 종가 기준 | Yahoo v8 |
+| E3 | 보유종목 어닝 발표 | 당일 또는 전일 발표 | 어닝 캘린더 |
+| E4 | Regime Sentinel 🟠+ | 경고 2개+ 지표 돌파 | regime-sentinel.py |
+| E5 | Kill Condition 근접 | 임계치 대비 10% 이내 | Phase 0 데이터 |
+| E6 | BTC ±10% 일일 변동 | 전일 기준 | CoinGecko |
+| E7 | Watchlist Target HIT | 목표가 도달 | watchlist-check.py |
+
+### Standard Day (Event 없음) — Compact Mode
+
+**수행 범위:**
+- Phase 0: 데이터 수집 (전체)
+- Phase 0.5: Data Integrity Audit (보유종목 + 매크로 핵심만)
+- Phase 1: L1 Macro — Regime 판정만 (간략, Adversarial 생략)
+- Phase 4: L4 Company — 보유종목 Quick Risk Check (Kill Condition + 뉴스 스캔)
+- Phase 4.5: Technical Dashboard (자동)
+- Phase 6: Synthesis — 기존 Conviction Card 조건 체크만 (C2/C3/C4 달성 여부)
+- Phase 7: 간결 브리핑 전송
+- Phase 8: PT Recording (판단 변경 있을 때만)
+
+**생략:**
+- L2 Sector, L3 Value Chain (보유종목 변동 없으면 결론 동일)
+- L5 Chart (Dashboard 자동 등급만, Analyst 토론 생략)
+- Adversarial Debate (Full 4-round 생략, Risk Flag만)
+- 100x Shawn 섹션 (Standard Day에선 생략)
+
+**예상 토큰:** ~30K (Full의 1/3)
+
+### Event Day — Full Mode
+
+**수행 범위:** Phase 0 → 0.5 → 1 → 2 → 3 → 4 → 4.5 → 5 → 6 → 7 → 8 전체
+- 모든 Layer에서 Adversarial Debate 4-round 풀 수행
+- 100x Shawn 섹션 포함
+- ICL Critic Pass 포함
+
+**예상 토큰:** ~80-100K
+
+### 모드 퇴화 방지 규칙
+1. **최소 주 1회 Event Day 보장** — 7일 연속 Standard면 금요일 자동 Event Day 발동
+2. **Standard Day에서도 Kill Condition은 절대 생략 불가**
+3. **모드 선택 로그 기록** — `daily/YYYY-MM-DD.md` 상단에 `[STANDARD]` 또는 `[EVENT: E2 BMNR -6.2%]` 표기
+4. **월간 리뷰에서 Standard/Event 비율 점검** — Event 비율 20% 미만이면 트리거 조건 완화 검토
+
+---
+
+## 일일 브리핑 워크플로우 상세 (Phase 0-8)
 
 ### Phase 0: 데이터 수집 (자동/크론, ~08:30)
 ```
