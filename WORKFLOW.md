@@ -132,7 +132,7 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
 
 ### Phase 1: Layer 1 — Macro Debate (~15분)
 
-**참여 (v3.1):** Regime Analyst, Counter-Consensus Analyst, **The Bottleneck Hunter (Cross-Layer)**, Macro Moderator
+**참여 (v4.1):** Regime Analyst, **Geopolitical Strategist (신설)**, Counter-Consensus Analyst (Critic 전담), **The Bottleneck Hunter (Cross-Layer)**, Macro Moderator
 
 **Critic 담당:** Counter-Consensus Analyst
 
@@ -140,6 +140,7 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
 
 1. **Round 1 — 독립 제시**
    - Regime Analyst: 현재 레짐 판정 + 유동성 방향 (Dalio/Druckenmiller 관점 분리)
+   - Geopolitical Strategist: 주요국 지도자 제약 조건 → 정책 예측 → 시장 영향 경로
    - Bottleneck Hunter: 매크로 병목
    - *Counter-Consensus Analyst는 Round 1에 참여하지 않음 (Critic 전담, v4.1)*
 
