@@ -166,83 +166,90 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
 
 ---
 
-### Phase 2: Layer 2 — Sector Scan (~10분)
+### Phase 2: Layer 2 — Sector Scan 🔄 Deep Loop
 
-**참여 (v3.1):** Opportunity Scanner, **Sector Skeptic (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer)**, Sector Moderator
+**참여:** Opportunity Scanner, **Sector Skeptic (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer)**, Sector Moderator
 
-**Critic 담당:** Sector Skeptic (전담)
+**Deep Loop 적용** (Event Day / On-demand — Standard Day는 단일 Loop)
 
-**Adversarial Debate 절차:**
+**각 Loop (최대 5회):**
 
-1. **Round 1 — 독립 제시**
+1. **R1 — 독립 제시**
    - Macro regime을 전달받고 산업 영향 분석
    - 각 전문가가 유망/역풍 산업 3개씩 제시
    - Opportunity Scanner: 파괴적 혁신 + 비컨센서스 테마 1개 이상 의무 발굴
+   - **🌐 Cross-Domain (X1 수요 풀 경쟁)**: "이 산업의 고객 예산을 빼앗는 이종 산업은?" (의무)
 
-2. **Round 2 — Critic 반론**
-   - **Sector Moderator**가 각 전문가의 산업 선택에 대해 반론 제시 (의무)
+2. **R2 — Critic 반론**
+   - **Sector Skeptic**이 각 전문가의 산업 선택에 대해 반론 (의무)
    - "왜 이 산업이 아니라 저 산업인가?" 도전
-   - 매크로 Layer와의 정합성 검증
+   - 이종 산업 비교에 대한 반론 포함
 
-3. **Round 3 — 재반박/수정**
-   - 각 전문가가 defend / revise / abandon 선택
+3. **R3 — 재반박/수정**
+   - defend / revise / abandon
    - 비컨센서스 테마는 특히 강하게 검증
 
-4. **Round 4 — Moderator 수렴**
-   - 살아남은 산업 뷰만 정리
-   - 핵심 분기점 식별
-   - 투표 주재
+4. **R4 — Moderator Edge Test**
+   - **Edge Test 4문항** (E1 Novelty / E2 Causality / E3 Actionability / E4 Falsifiability)
+   - 4/4 YES → 🎯 Loop 종료
+   - 미달 → 가장 약한 E항목으로 **Drill Question** 생성 → 다음 Loop R1에 투입
+   - 5회 후 미달 → ⚪ "No sector edge" → 기존 보유종목 산업 유지
 
-5. **투표:** 산업 매력도 Top 5 + 회피 산업
-
-**산출물:** `layers/L2-sector/sector-rankings.md` 업데이트
+**산출물:** `layers/L2-sector/sector-rankings.md` + Loop 기록
 
 ---
 
-### Phase 3: Layer 3 — Value Chain Analysis (~10분)
+### Phase 3: Layer 3 — Value Chain Analysis 🔄 Deep Loop + Deep Causal Drill
 
-**참여 (v3.1):** Moat Analyst, **Moat Breaker (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer, 주도적 역할)**, Value Chain Moderator
+**참여:** Moat Analyst, **Moat Breaker (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer, 주도적 역할)**, Value Chain Moderator
 
-**Critic 담당:** Moat Breaker (전담)
+**Deep Loop 적용** + **Deep Causal Drill** (인과사슬 5단계 추적)
 
-**Adversarial Debate 절차:**
+**각 Loop (최대 5회):**
 
-1. **Round 1 — 독립 제시**
+1. **R1 — 독립 제시**
    - Phase 2에서 선정된 유망 산업의 밸류체인 매핑
    - 가치 집중 노드 식별 (곡괭이, 플랫폼, 톨게이트)
-   - **[의무] Causal Mechanism Map 작성**
-     - 분석 대상 기업의 매출 인과사슬을 명시적으로 그린다
-     - 형식: `[투입] → [프로세스] → [핵심 노드] → [산출] → [최종 가치]`
-     - 치명적 약점 + 대안 경로 식별
+   - **[의무] Causal Mechanism Map 작성** (투입 → 프로세스 → 핵심 노드 → 산출 → 최종 가치)
+   - **🔬 Deep Causal Drill**: Bottleneck Hunter가 이전 Loop에서 식별한 병목의 **다음 단계** 추적
+   - **🌐 Cross-Domain (X2 기능 대체)**: "전혀 다른 기술이 같은 job-to-be-done을 하는 경우?" (의무)
 
-2. **Round 2 — Critic 반론**
-   - **Value Chain Moderator**가 각 전문가의 노드 선택에 대해 반론
-   - "이 노드가 정말 가치를 포착하는가?" 도전
-   - AI Commoditization Filter 적용: "이 해자가 AI로 대체 가능한가?"
+2. **R2 — Critic 반론**
+   - **Moat Breaker**가 노드 선택 + 해자 지속성에 반론 (의무)
+   - AI Commoditization Filter: "이 해자가 AI/compute로 풀려버리는가?"
+   - Causal Mechanism Map의 치명적 약점 공격
 
-3. **Round 3 — 재반박/수정**
-   - 각 전문가가 defend / revise / abandon 선택
-   - Causal Mechanism Map의 약점 보완
+3. **R3 — 재반박/수정**
+   - defend / revise / abandon
+   - Deep Causal Drill 결과로 인과사슬 보강 또는 수정
 
-4. **Round 4 — Moderator 수렴**
-   - 살아남은 노드만 정리
-   - 밸류체인 내 최적 투자 포지션 합의
+4. **R4 — Moderator Edge Test**
+   - Edge Test 4문항 실시
+   - 특히 **E2 Causality**: 인과사슬이 몇 단계까지 추적되었는가? (3단계 미만 → E2 실패)
+   - 미달 → Drill Question 생성 → 다음 Loop에서 인과사슬 한 단계 더 깊이
 
-5. **투표:** 산업별 밸류체인 맵 + 최적 투자 노드
+**Deep Causal Drill 기록 형식:**
+```
+Loop 1: [메가트렌드] → [1차 병목: ___]
+Loop 2: → [2차 병목: ___]
+Loop 3: → [3차 병목: ___]
+Loop 4: → [4차 병목: ___] ← 여기서 상장 기업 식별 시 🎯
+Loop 5: → [5차 병목: ___]
+```
 
-**산출물:** `layers/L3-valuechain/frameworks.md` 업데이트
+**산출물:** `layers/L3-valuechain/frameworks.md` + Deep Causal Drill 기록 + Loop 기록
 
 ---
 
-### Phase 4: Layer 4 — Company Deep Dive (~20분)
+### Phase 4: Layer 4 — Company Deep Dive 🔄 Deep Loop + Cross-Domain
 
-**참여 (v3.1):** Company Analyst, **Forensic Accountant (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer)**, Company Moderator
+**참여:** Company Analyst, **Forensic Accountant (전담 Critic)**, **The Bottleneck Hunter (Cross-Layer)**, Company Moderator
 
-**Critic 담당:** Forensic Accountant (전담 — 역할 강화)
+**Deep Loop 적용** — 기업 분석의 핵심 Layer, 가장 깊은 토론
 
-**Adversarial Debate 절차:**
+**각 Loop (최대 5회):**
 
-1. **Round 1 — 독립 제시**
+1. **R1 — 독립 제시**
    - 워치리스트 + 현재 보유 종목 리뷰
    - 신규 종목 후보 검토 (Phase 2-3에서 도출)
    - **[의무] Management Will Tracker 평가**
@@ -271,15 +278,21 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
    - defend / revise / abandon 선택
    - Bear Case를 반박 못하면 확신도 자동 하향
 
-5. **Round 4 — Moderator 수렴**
-   - Company Moderator가 살아남은 논거만 정리
+   - **🌐 Cross-Domain (X1 수요풀 + X3 자본흐름 + X5 규제유비)**: 
+     - "같은 고객 예산을 놓고 경쟁하는 이종 기업은?" (X1)
+     - "같은 투자 테마 자금 풀을 두고 경쟁하는 자산은?" (X3)
+     - "다른 산업에서 유사한 규제 궤적을 겪은 사례는?" (X5)
+
+5. **R4 — Moderator Edge Test**
+   - Company Moderator가 살아남은 논거 정리
+   - **Edge Test 4문항** 실시 — 특히 **E1 Novelty**: "sell-side 리포트에 없는 인사이트인가?"
    - Bull/Bear 균형 검증
-   - 핵심 모니터링 변수 식별
-   - 투표 주재
+   - 미달 → Drill Question 생성 (예: "이 기업의 비명시적 경쟁자를 3개 더 찾아라")
+   - 5회 후 미달 → ⚪ "No company edge" → Edge Score 0-4 → PASS 권고
 
-6. **투표:** 종목별 확신도 (1-10) + 적정가 + 액션
+6. **투표:** 종목별 확신도 (1-10) + 적정가 + 액션 + **Edge Score (0-10)**
 
-**산출물:** `layers/L4-company/watchlist.md` + `active-positions.md` 업데이트
+**산출물:** `layers/L4-company/watchlist.md` + `active-positions.md` + Loop 기록 + VP Box
 
 ---
 
@@ -354,25 +367,33 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
    - 각 가설에 최소 2개 근거 제시 의무
    - 가장 높은 확률의 가설에 따라 행동 결정
 
-4. **모든 종목/테마에 Conviction Card 작성:**
+4. **모든 종목/테마에 Conviction Card 작성 (C0부터):**
+   - **C0 🔭 Thesis — 세상이 어떻게 바뀌는가?** (구조적 변화 가설 + 인과 + 시간축 + 수혜 + 반증)
    - C1 🔥 Burn? — 태울 만한가? (⭐~⭐⭐⭐ + 비대칭 배율)
    - C2 🚪 Entry — 진입 조건 (가격, 시점, 이벤트)
    - C3 🎯 Exit — 목표가/익절 (시간축별)
    - C4 ☠️ Kill — 가설 폐기/손절 조건 (기계적 실행)
 
-5. **기존 보유 종목 C2/C3/C4 조건 달성 여부 체크** (Pre-Commitment Trigger)
+5. **📌 Variant Perception Box 작성 (필수)**
+   - sell-side 컨센서스 (web_search로 PT 평균, Buy/Hold/Sell 분포 수집)
+   - PLEDS 뷰 vs 컨센서스 차이점 명시
+   - 차이의 근거 (인과 메커니즘 기반)
+   - 검증 시점 + **Edge Score (0-10)**
+   - **Edge Score 0-4 → 자동 PASS** (edge 없는 곳에 돈 넣지 않음)
 
-6. **포지션 사이징 결정**
+6. **기존 보유 종목 C2/C3/C4 조건 달성 여부 체크** (Pre-Commitment Trigger)
 
-7. **Conviction Journal 업데이트 지시**
+7. **포지션 사이징 결정** (Edge Score 연동 — 높을수록 적극적)
+
+8. **Conviction Journal 업데이트 지시**
    - `conviction/` 폴더에 해당 종목 Journal 업데이트
    - Entry Thesis 변화 여부, Delta 기록
    - **"이 기업에 인생을 걸 수 있는가?"** 수준의 conviction 에센스 추출
 
-8. **'100배 똑똑한 Shawn이라면?' 섹션**
+9. **'100배 똑똑한 Shawn이라면?' 섹션**
 
 **산출물:**
-- `synthesis/action-list.md` — 오늘의 투자 액션 + Conviction Cards
+- `synthesis/action-list.md` — 오늘의 투자 액션 + Conviction Cards (C0 포함) + VP Box
 - `synthesis/conviction-cards.md` — 전 종목 카드 누적 관리
 - `daily/YYYY-MM-DD.md` — 일일 브리핑 전문
 - `conviction/*.md` — 종목별 Conviction Journal 업데이트

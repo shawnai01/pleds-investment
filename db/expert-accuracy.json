@@ -71,6 +71,27 @@
     "L4_company": { "contribution_score": null, "direction_accuracy": null, "weight_current": 0.30 },
     "L5_technical": { "contribution_score": null, "direction_accuracy": null, "weight_current": 0.15 }
   },
+  "variant_perception": {
+    "total_vp_recorded": 0,
+    "vp_direction_opposite_consensus": 0,
+    "vp_correct_when_different": 0,
+    "vp_accuracy_when_different": null,
+    "note": "This is the TRUE KPI — accuracy when PLEDS disagrees with consensus",
+    "judgments": []
+  },
+  "edge_scores": {
+    "total_scored": 0,
+    "avg_edge_score": null,
+    "distribution": { "0-1": 0, "2-4": 0, "5-7": 0, "8-10": 0 },
+    "edge_found_count": 0,
+    "no_edge_count": 0
+  },
+  "deep_loop_stats": {
+    "total_deep_loops": 0,
+    "avg_loops_to_edge": null,
+    "edge_found_at_loop": { "1": 0, "2": 0, "3": 0, "4": 0, "5": 0 },
+    "no_edge_after_5": 0
+  },
   "system_health": {
     "weekly_snapshots": [],
     "standard_day_count": 0,
