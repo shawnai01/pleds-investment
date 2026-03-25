@@ -69,10 +69,10 @@
 
 | Card | 내용 |
 |------|------|
-| **C1 🔥 Burn?** | ⭐ \| Risk:Reward = 미정 \| "MSTR 아날로지 + mNAV 이중 레버리지" |
-| **C2 🚪 Entry** | 진입 완료 (35%) |
-| **C3 🎯 Exit** | [미정 — Shawn 확인 필요] |
-| **C4 ☠️ Kill** | ETH fatal bug / US crypto ban / BMNR fraud·bankruptcy / $12 이하 |
+| **C1 🔥 Burn?** | ⭐⭐ \| R:R = 1.54:1 \| EV +66.4% \| "스테이킹 수익으로 자생 가능한 ETH Treasury" |
+| **C2 🚪 Entry** | 진입 완료 (26.1%) + 추가 4% 가능 (30% 캡) @ ETH $1,900 이하 또는 BMNR $17 이하 |
+| **C3 🎯 Exit** | 6mo: $30-35 / 1yr: $45-55 / 3yr: $100+ / 부분청산: $35(25%), $50(25%), $75+(25%) |
+| **C4 ☠️ Kill** | $12 이하 50% 청산 / $8 이하 전량 청산 / mNAV 0.6x 2주 지속 재평가 / MSTR 파산 시 50% 청산 후 관찰 |
 
 ---
 
@@ -84,6 +84,8 @@
 | 2026-03-20 | 가격 $21.14 (-1.3%) | — | Kill 미충족 | ⭐ 유지 |
 | 2026-03-21 | 가격 $20.94 (주간 -10.47%) | **A: 매크로 selloff** | VIX 27, 글로벌 리스크오프 | ⭐ 유지 |
 | 2026-03-22 | **SEC Filing 팩트체크** | — | 아래 상세 | ⭐ 유지 (리스크 상향) |
+| 2026-03-25 | **MAVAN 런칭** | — | 스테이킹 인프라 완성 | ⭐⭐ 상향 |
+| 2026-03-26 | **PLEDS v4.0 Deep Loop** | — | Break Scenario 검증 완료 | ⭐⭐ 유지 |
 
 ### 2026-03-22 SEC Filing Factcheck 결과
 
@@ -126,35 +128,55 @@
 
 > **"이 기업에 인생을 걸 수 있는가?"**
 
-**현재 답변**: 아직 아니다. 하지만 이해도 상승.
-
-**SEC Filing 팩트체크 후 업데이트된 평가**:
-
-| 이전 | 현재 |
-|------|------|
-| MSTR 유비 50% | **40%** (전환사채 부재 확인) |
-| 현금흐름 부재 | **스테이킹 $180M/yr** ✅ |
-| 경영진 불투명 | **Tom Lee + 기관투자자** 🟢 |
-| 희석 리스크 불명확 | **3개월 74%** ⚠️ |
-
-**핵심 리스크 재평가**:
-1. ✅ 스테이킹 수익이 운영비 커버 가능 — 이전보다 안전
-2. ⚠️ 희석 속도 매우 빠름 — ETH 하락 시 가속화 우려
-3. ❌ 전환사채 없음 — MSTR 레버리지 메커니즘 부재
-
-**conviction 강화 조건**:
-1. ETH 본격 상승기 진입 확인
-2. ~~경영진 투명성 개선~~ → ✅ Tom Lee 합류로 부분 충족
-3. mNAV premium 지속 확인
-4. 희석 속도 둔화 확인
-
-**현재 확신도**: ⭐ (관찰 유지, 희석 모니터링 강화)
-
-**신규 Kill Condition 추가**: 희석률 분기 100% 초과 시 재검토
+**현재 답변**: 조건부 Yes. Break Scenario 검증 완료.
 
 ---
 
-## mNAV 계산 기준 (2026-03-25 업데이트)
+### 2026-03-26 PLEDS v4.0 Deep Loop 결과
+
+**Break Scenario 검증 (Shawn 요청):**
+
+| Scenario | 확률 | 방어요소 |
+|----------|------|----------|
+| 희석 과다 (Death Spiral) | 10-15% | 스테이킹 $184M/yr, 현금 $1.1B, 무차입 |
+| MSTR 붕괴 연좌제 | 1-2% | 구조적 차이 (무차입, yield, ETH vs BTC) |
+| ETH 네트워크 리스크 | 15-20% | 장기 모니터링 |
+| **종합 Break 확률** | **~25%** | |
+
+**Expected Value:**
+```
+Bull (30%): +186% | Base (40%): +67% | Bear (20%): -43% | Break (10%): -76%
+EV = +66.4% | R:R = 1.54:1
+```
+
+**핵심 발견:**
+1. ✅ 희석은 "NAV accretive" — 주당 NAV 증가 중
+2. ✅ "Premium to mNAV only" 발행 정책 — 제약조건 존재
+3. ✅ 스테이킹 $184M/yr — 외부 자금 없이 자생 가능
+4. ✅ MAVAN 런칭 (3/25) — 스테이킹 인프라 완성
+5. ⚠️ 50B 주식 승인 — headroom 큼, 모니터링 필요
+
+**Variant Perception:**
+> "시장은 BMNR을 '희석하는 ETH 펀드'로 보지만, 실제로는 '스테이킹 수익으로 자생 가능한 ETH Treasury'다."
+
+---
+
+### 추가 베팅 권고 (100x Shawn)
+
+| 항목 | 권고 |
+|------|------|
+| 현재 포지션 | 유지 (26.1%, $83.8K) |
+| 추가 가능 | 최대 4% ($12K) → 30% 캡 |
+| 진입 조건 | ETH $1,900 이하 또는 BMNR $17 이하 |
+| Kill 엄수 | $12 이하 50% 기계적 청산 |
+
+**현재 확신도**: ⭐⭐ (Break Scenario 검증 완료, MAVAN 런칭)
+
+**상세 분석**: `projects/pleds/debates/2026-03-26-BMNR-deep-loop.md`
+
+---
+
+## mNAV 계산 기준 (2026-03-26 업데이트)
 
 **⚠️ mNAV는 매번 실시간 계산. 파일 인용 금지.**
 
@@ -165,16 +187,24 @@ Total NAV = (ETH tokens × ETH price) + BTC + Beast + ORBS + Cash
 ```
 
 ### 최신 수치 (PRNewswire 2026-03-23 공시 기준)
-- ETH: 4,660,903 tokens
+- ETH: 4,660,903 tokens (3.86% of supply)
 - BTC: 196 tokens
 - Beast Industries: $200M
 - ORBS (Eightco): $95M
 - Cash: $1.1B
-- Shares outstanding: 454.86M (Finviz)
+- Staked ETH: 3,142,643 (67% of holdings)
+- Staking Revenue: $184M/yr (현재), $272M/yr (풀 스테이킹 시)
 
-### 3/25 계산 (ETH $2,133)
-- Total NAV: $11.35B
-- Market Cap: $9.46B
-- **mNAV: 0.83x (17% discount)**
-- NAV/share: $24.95
-- ETH/share: 0.0102
+### 3/26 계산 (ETH $2,100 가정)
+- ETH NAV: $9.79B
+- 기타 자산: $1.40B (BTC + Beast + ORBS + Cash)
+- Total NAV: $11.19B
+- Market Cap: ~$9.0B
+- **mNAV: 0.80x (20% discount)**
+- NAV/share: ~$26
+- ETH/share: ~0.0108
+
+### MAVAN 런칭 (2026-03-25)
+- 자체 스테이킹 인프라 완성
+- 7일 수익률: 2.83% (CESR 2.75% 상회)
+- 기관 스테이킹 서비스 제공 예정
