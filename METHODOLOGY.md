@@ -599,23 +599,44 @@ Min Threshold = 0.10 (이 이하면 투자 안 함)
 
 ---
 
-## 13. 성과 추적
+## 13. 성과 추적 & 전문가 적중률 시스템
+
+> v2.0 (2026-03-26): 자동화된 적중률 DB + Judgment 템플릿 + 주간 리뷰 연동
 
 ### 판정 기록
 모든 토론 결과를 `debates/` 폴더에 저장:
 - 날짜, 참여 전문가, 각 투표, 최종 판정
 - 6개월 후 실제 결과와 비교
 
-### 전문가 적중률
-`db/expert-accuracy.json`에 각 전문가의:
-- 방향 적중률
-- 수익 기여도
-- Brier Score (확률 정확도)
-→ 적중률 높은 전문가의 가중치 점진적 상향
+### Judgment 구조화 기록 (v3.2 신설)
 
-### Layer 적중률
-어느 Layer가 수익에 가장 기여하는지 추적
-→ 가중치 연간 재조정
+모든 PLEDS 분석은 `tracking/judgments/TEMPLATE.md` 형식으로 기록:
+- **§2 Layer별 전문가 판정 테이블** — 각 전문가의 독립 방향/확신도/Critic 결과
+- **§5 Checkpoints** — 30d/90d/180d/1yr 자동 채점 대기
+
+이 구조가 없으면 전문가별 적중률을 측정할 수 없다.
+**향후 모든 judgment는 반드시 §2 테이블을 포함해야 한다.**
+
+### 전문가 적중률 DB
+
+`db/expert-accuracy.json` — 주간 전략 리뷰(일요일 cron)가 자동 업데이트:
+
+**측정 지표:**
+- **방향 적중률** — PLEDS 방향(Bull/Bear) vs 실제 주가 움직임
+- **Critic 효과** — Critic이 abandon시킨 논거가 실제로 틀렸는지 (Critic 정확도)
+- **Brier Score** — 확률 예측 정확도 (확신도 vs 실제 결과)
+- **Layer 기여도** — 어느 Layer가 최종 판정 변경에 가장 기여했는지
+
+**업데이트 주기:**
+- **주간**: 주가 스냅샷 수집 + Kill 체크 (주간 전략 리뷰 cron)
+- **30d/90d checkpoint**: 방향 적중 확정 + accuracy 업데이트
+- **분기**: Feedback Signal Report → Layer 가중치 조정 검토
+
+**가중치 조정 규칙:**
+- 적중률 상위 20% 전문가: 가중치 +10%
+- 적중률 하위 20% 전문가: 가중치 -10% + 페르소나 재검토
+- Layer 적중률 60% 미만: 해당 Layer 가중치 하향 검토
+- **최소 30건 이상 축적 후 조정** (표본 부족 방지)
 
 ### Conviction Journal 추적
 - `conviction/` 폴더에 종목별 conviction 여정 기록
@@ -623,9 +644,10 @@ Min Threshold = 0.10 (이 이하면 투자 안 함)
 - "왜 맞았나 / 왜 틀렸나" 회고 의무
 
 ### Reality Coherence Audit 추적
-- `audit/` 폴더에 월간 현실 감사 기록
+- `audit/` 폴더에 주간/월간 감사 기록
 - 예측 적중률, Stale Thesis, Echo Chamber 경고 이력
 - 시스템 개선 트리거 기록
+- **주간 전략 리뷰 cron (일요일 10:00 KST)이 자동 생성**
 
 ---
 

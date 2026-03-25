@@ -1,30 +1,81 @@
 {
   "meta": {
     "created": "2026-03-26",
-    "description": "PLEDS 전문가 적중률 추적 DB. PT checkpoint 데이터 축적 후 populate.",
-    "version": "1.0",
-    "next_checkpoint": "2026-04-20"
+    "description": "PLEDS 전문가 적중률 추적 DB. Weekly Review가 자동 업데이트. PT checkpoint에서 채점.",
+    "version": "2.0",
+    "schema_note": "각 expert의 judgments[]에 {date, ticker, direction, confidence, checkpoint_date, actual_direction, hit} 기록",
+    "next_checkpoint": "2026-04-20",
+    "populate_start": "2026-04-20 (첫 30d checkpoint부터 실데이터 축적)"
   },
   "experts": {
-    "regime_analyst": { "predictions": 0, "correct": 0, "accuracy": null },
-    "counter_consensus": { "predictions": 0, "correct": 0, "accuracy": null },
-    "opportunity_scanner": { "predictions": 0, "correct": 0, "accuracy": null },
-    "sector_skeptic": { "predictions": 0, "correct": 0, "accuracy": null },
-    "moat_analyst": { "predictions": 0, "correct": 0, "accuracy": null },
-    "moat_breaker": { "predictions": 0, "correct": 0, "accuracy": null },
-    "company_analyst": { "predictions": 0, "correct": 0, "accuracy": null },
-    "forensic_accountant": { "predictions": 0, "correct": 0, "accuracy": null },
-    "technical_analyst": { "predictions": 0, "correct": 0, "accuracy": null },
-    "signal_skeptic": { "predictions": 0, "correct": 0, "accuracy": null },
-    "bottleneck_hunter": { "predictions": 0, "correct": 0, "accuracy": null },
-    "allocator": { "predictions": 0, "correct": 0, "accuracy": null }
+    "regime_analyst": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": []
+    },
+    "counter_consensus": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": [],
+      "critic_stats": { "total_rebuttals": 0, "survived": 0, "revised": 0, "abandoned": 0 }
+    },
+    "opportunity_scanner": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": []
+    },
+    "sector_skeptic": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": [],
+      "critic_stats": { "total_rebuttals": 0, "survived": 0, "revised": 0, "abandoned": 0 }
+    },
+    "moat_analyst": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": []
+    },
+    "moat_breaker": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": [],
+      "critic_stats": { "total_rebuttals": 0, "survived": 0, "revised": 0, "abandoned": 0 }
+    },
+    "company_analyst": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": []
+    },
+    "forensic_accountant": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": [],
+      "critic_stats": { "total_rebuttals": 0, "survived": 0, "revised": 0, "abandoned": 0 },
+      "bear_cases_presented": 0,
+      "bear_cases_materialized": 0
+    },
+    "technical_analyst": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": []
+    },
+    "signal_skeptic": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": [],
+      "critic_stats": { "total_rebuttals": 0, "survived": 0, "revised": 0, "abandoned": 0 }
+    },
+    "bottleneck_hunter": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": []
+    },
+    "allocator": {
+      "total": 0, "correct": 0, "accuracy": null,
+      "judgments": []
+    }
   },
   "layers": {
-    "L1_macro": { "contribution_score": null, "direction_accuracy": null },
-    "L2_sector": { "contribution_score": null, "direction_accuracy": null },
-    "L3_valuechain": { "contribution_score": null, "direction_accuracy": null },
-    "L4_company": { "contribution_score": null, "direction_accuracy": null },
-    "L5_technical": { "contribution_score": null, "direction_accuracy": null }
+    "L1_macro": { "contribution_score": null, "direction_accuracy": null, "weight_current": 0.25 },
+    "L2_sector": { "contribution_score": null, "direction_accuracy": null, "weight_current": 0.20 },
+    "L3_valuechain": { "contribution_score": null, "direction_accuracy": null, "weight_current": 0.10 },
+    "L4_company": { "contribution_score": null, "direction_accuracy": null, "weight_current": 0.30 },
+    "L5_technical": { "contribution_score": null, "direction_accuracy": null, "weight_current": 0.15 }
   },
-  "weekly_snapshots": []
+  "system_health": {
+    "weekly_snapshots": [],
+    "standard_day_count": 0,
+    "event_day_count": 0,
+    "echo_chamber_warnings": 0,
+    "stale_thesis_flags": 0
+  }
 }
