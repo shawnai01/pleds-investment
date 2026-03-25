@@ -440,24 +440,40 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
 
 ---
 
-## 주간 Full Debate (매주 일요일 10:00 KST)
+## 주간 전략 리뷰 (매주 일요일 10:00 KST) — 자동화
 
-### 추가 절차:
-1. **주간 성과 리뷰** — 포트폴리오 수익률 vs 벤치마크
-2. **전문가 적중률 업데이트** — 지난주 판정 vs 실제
-3. **Adversarial Debate 회고** — 어떤 논거가 살아남았고, 어떤 것이 폐기되었나
-4. **신규 테마 브레인스토밍** — Opportunity Scanner 주도
-5. **포지션 재조정 토론** — 드리프트 체크
-6. **Conviction Journal 종합 리뷰** — 각 종목의 conviction 변화 추적
-7. **다음 주 핵심 이벤트 프리뷰** — 어닝, FOMC, CPI 등
+> **Cron Job ID:** `5680d320` | **Model:** Opus | **Timeout:** 600s
+> **기존 PT 주간 워치독(3bf432ee)을 흡수 통합** (2026-03-26)
 
-### Reality Coherence Audit (METHODOLOGY §3-3 연동)
-8. **예측 vs 실제 괴리** — 지난 7일 PLEDS 판정 vs 실제 시장 결과
-9. **Stale Thesis Detection** — 30일+ 업데이트 없는 conviction 플래그
-10. **Echo Chamber Check** — 최근 분석의 Bull/Bear 비율 점검 (80/20+ 시 경고)
-11. **Model Drift** — 밸류에이션 모델 전제 vs 현실 괴리 체크
+### 자동 실행 Phase:
 
-**산출물:** `audit/YYYY-WW-weekly-audit.md`
+**Phase A — 데이터 수집 (기계적)**
+1. 포트폴리오 현재 가격 수집 (Yahoo v8 + CoinGecko)
+2. PT 추적 — 전 Judgment 주가 스냅샷 (Twelve Data)
+3. Kill Condition 체크 (BTC $60K, ETH $2K, USDC 시총)
+4. Checkpoint 도래 확인 + 리뷰
+
+**Phase B — 전략적 판단 (Reality Coherence Audit)**
+5. **예측 vs 실제 괴리** — 지난 7일 PLEDS 판정 vs 실제 시장 결과 (적중률 60% 미만 → 재검토)
+6. **Stale Thesis Detection** — 30일+ 업데이트 없는 conviction 플래그
+7. **Echo Chamber Check** — 최근 분석의 Bull/Bear 비율 점검 (80/20+ 시 경고)
+8. **Model Drift** — 밸류에이션 모델 전제 vs 현실 괴리 체크
+
+**Phase C — 종합 & 산출**
+9. 포트폴리오 등급 (A~F) 산출
+10. 액션 권고 (최대 3개, 근거 필수)
+11. 시스템 건강 메타 지표 → `db/expert-accuracy.json` 업데이트
+
+**Phase D — 배포**
+12. `audit/YYYY-WW-weekly-audit.md` 작성 → git push
+13. Shawn 텔레그램 브리핑 전송
+
+**산출물:**
+- `audit/YYYY-WW-weekly-audit.md` (주간 보고서)
+- `tracking/accuracy.md` (주가 스냅샷 업데이트)
+- `db/expert-accuracy.json` (메타 지표 스냅샷)
+
+**템플릿:** `audit/WEEKLY-TEMPLATE.md`
 
 ---
 
