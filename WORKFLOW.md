@@ -565,6 +565,83 @@ Loop 5: → [5차 병목: ___]
 
 ---
 
+## Hypothesis Mode — 가설 중심 On-demand 분석 (v4.1 신설)
+
+> "신규 종목 탐색은 Full Layer Scan, 특정 가설 검증은 Hypothesis Mode."
+> Shawn이 특정 질문/가설로 분석을 요청할 때 사용하는 경로.
+
+### 트리거
+- Shawn이 "이 종목의 X를 검증해줘", "Y 시나리오를 검토해줘" 형태로 요청
+- 기존 포트폴리오 종목의 특정 리스크/기회 심화 분석
+
+### Layer 자동 선별 규칙
+
+| 가설 유형 | 유관 Layer | 예시 |
+|----------|-----------|------|
+| 경영진/거버넌스 | L4 Company | "Tom Lee 인센티브 aligned?" |
+| 산업 구조 변화 | L2 Sector + L3 Value Chain | "USDT가 USDC를 대체?" |
+| 매크로 영향 | L1 Macro + L4 Company | "금리 인상 시 BMNR 영향?" |
+| 기술적 타이밍 | L5 Chart + L4 Company | "지금 진입 OK?" |
+| 밸류에이션 | L3 Value Chain + L4 Company | "현재 mNAV discount 정당?" |
+| 복합 (Break Scenario) | L2 + L3 + L4 (Deep Loop) | "부러질 수 있는 시나리오 전부" |
+
+### 절차
+
+1. **가설 명확화**: Shawn의 질문에서 핵심 가설 1-3개 추출
+2. **Layer 선별**: 위 테이블 기준으로 유관 Layer만 선택
+3. **데이터 수집**: 가설 검증에 필요한 데이터만 타겟 수집 (Phase 0 전체 불필요)
+4. **Deep Loop 실행**: 선별된 Layer에서 §10 Deep Loop (최대 5회, Edge Test)
+5. **Cross-Domain Comparison**: 가설과 관련된 이종 비교 최소 1축
+6. **Conviction Card 업데이트**: 기존 카드가 있으면 delta 업데이트, 없으면 신규 작성
+7. **VP Box + Edge Score**: 필수 포함
+8. **PT Record**: judgment 파일 생성
+
+### 3-에이전트 삼각검증 프로토콜 🔺
+
+> Conviction sizing 관련 분석 (추가 매수/매도/비중 변경 판단) 시 의무 적용.
+> 단순 탐색/정보 수집에는 불필요.
+
+**적용 조건:**
+- Shawn이 포지션 사이징 변경을 고려 중
+- Kill Condition 근접으로 매도 판단 필요
+- 신규 종목 대규모 진입 (10%+) 검토
+
+**3-에이전트 구성:**
+
+| Agent | 역할 | 프롬프트 핵심 |
+|-------|------|-------------|
+| **A: Bull Advocate** | 최강 bull case 구축 | "이 종목의 가장 설득력 있는 상승 시나리오를 구축하라. Bear는 반론으로만 등장." |
+| **B: Bear Advocate** | 최강 bear case 구축 | "이 종목이 -50% 가는 시나리오를 최대한 설득력 있게 구축하라. Bull 반론 제한." |
+| **C: Neutral Judge** | A/B 결과 판정 | "Agent A(Bull)와 Agent B(Bear)의 분석을 읽고 판정하라. 교집합, 분기점, 최종 Edge Score를 산출하라." |
+
+**실행 순서:**
+1. A와 B를 **병렬 발사** (독립 실행, 서로의 결과 모름)
+2. A/B 완료 후 결과를 C에 **입력으로 전달**
+3. C가 종합 판정 + Conviction Card + VP Box 작성
+
+**산출물:**
+- `debates/YYYY-MM-DD-{ticker}-bull.md` (Agent A)
+- `debates/YYYY-MM-DD-{ticker}-bear.md` (Agent B)
+- `debates/YYYY-MM-DD-{ticker}-verdict.md` (Agent C = 최종)
+
+**핵심 원칙:**
+- A/B는 서로의 존재를 모름 (독립성 보장)
+- C만이 양쪽을 다 본 상태에서 판정 (정보 우위)
+- Edge Score = C의 판정이 최종
+- **비용**: ~$9-15/분석 (Opus 3회)
+
+**단일 에이전트 vs 삼각검증 사용 기준:**
+
+| 상황 | 방식 |
+|------|------|
+| 정보 수집, 탐색, 워치리스트 추가 | 단일 에이전트 |
+| 기존 포지션 Quick Risk Check | 단일 에이전트 |
+| **포지션 사이징 변경 판단** | **삼각검증** |
+| **신규 대규모 진입 (10%+)** | **삼각검증** |
+| **Kill 근접 매도 판단** | **삼각검증** |
+
+---
+
 ## Bottleneck Thesis Scan (제약 조건 테마 스캔)
 
 ### 목적
