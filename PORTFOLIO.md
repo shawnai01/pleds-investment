@@ -7,22 +7,22 @@
 
 | Asset | Ticker | Shares | Entry Basis | Current Price | Market Value | Allocation | P&L |
 |-------|--------|--------|-------------|---------------|-------------|-----------|-----|
-| Bitmine | BMNR | 4,000 | $18.37 | $21.24 | $84,960 | 25.3% | **+15.6%** |
-| Circle | CRCL | 600 | $104.35 | $103.86 | $62,316 | 18.6% | **-0.5%** |
-| Energy Recovery | ERII | 3,000 | $9.50 | $10.14 | $30,420 | 9.1% | **+6.7%** |
-| Treasury Bills ETF | SGOV | 1,000 | ~$100.5 | $100.59 | $100,590 | 30.0% | — |
+| Bitmine | BMNR | 4,000 | $18.37 | $21.24 | $84,960 | 27.2% | **+15.6%** |
+| Circle | CRCL | 600 | $104.35 | $104.61 | $62,766 | 20.1% | **+0.2%** |
+| Energy Recovery | ERII | 3,000 | $9.50 | $10.14 | $30,420 | 9.8% | **+6.7%** |
+| Treasury Bills ETF | SGOV | 1,000 | ~$100.5 | $100.59 | $100,590 | 32.2% | — |
 | USD Cash | — | — | — | — | $33,190 | 10.6% | — |
-| **Total** | | | | | **$311,476** | **100%** | |
+| **Total** | | | | | **$311,926** | **100%** | |
 
 ## Portfolio Characteristics
-- **Risk assets:** 52.9% (BMNR + CRCL + ERII)
-- **Safe assets:** 40.5% (SGOV + USD)
-- **Crypto exposure:** 43.8% (BMNR + CRCL) ⚠️ METHODOLOGY 상한 40% 초과
-- **Non-crypto risk:** 9.1% (ERII)
-- **Single stock concentration:** BMNR 25.3% ✅ METHODOLOGY 상한 30% 이내
-- **Theme concentration:** Crypto 43.8% ⚠️
+- **Risk assets:** 57.1% (BMNR + CRCL + ERII)
+- **Safe assets:** 42.9% (SGOV + USD)
+- **Crypto exposure:** 47.4% (BMNR + CRCL) ⚠️ METHODOLOGY 상한 40% 초과
+- **Non-crypto risk:** 9.8% (ERII)
+- **Single stock concentration:** BMNR 27.2% ✅ METHODOLOGY 상한 30% 이내
+- **Theme concentration:** Crypto 47.4% ⚠️
 - **종목 수:** 3개 (BMNR, CRCL, ERII)
-- **Cash+SGOV (quasi-cash):** 40.5% ✅ 10% 최소 충족
+- **Cash+SGOV (quasi-cash):** 42.9% ✅ 10% 최소 충족
 
 ## 변경 이력 (2026-03-27)
 - **CLS 전량 매도** (8.7% → 0%): $282.44 × 99주 = $27,962. Conviction 최약, 근미래 3x 포트폴리오 부적합 판단. P&L: **+$160 (+0.6%)**
@@ -34,11 +34,11 @@
 - **BMNR 추가매수** (17.8% → 26.1%): $20.95 × 500주 추가. 총 4,000주, 평단 $18.37
 
 ## ⚠️ Risk Flag
-- **Crypto 43.8% > 40% 상한**: BMNR 25.3% + CRCL 18.6%. METHODOLOGY §10 한도 초과.
+- **Crypto 47.4% > 40% 상한**: BMNR 27.2% + CRCL 20.1%. METHODOLOGY §10 한도 초과.
   - Shawn 인지 하에 conviction override. 90일 후 리뷰 (2026-06-25).
 
 ## Investment Profile
-- **Total portfolio:** ~$311,476
+- **Total portfolio:** ~$311,926
 - **Style:** 집중 투자 (3-5 종목), 오버슈팅 저점 진입, 본절 손절, 익절 최대한 미루기
 - **Goal:** 비대칭 하이 리턴 탐색, 시드 극대화
 - **Risk tolerance:** High (early career) — 블랙스완만 아니면 변동성 감내
@@ -53,8 +53,8 @@
 ## 크립토 공통 Kill Condition 🔴
 > **BTC $60,000 붕괴 임박 시 크립토 전 포지션(BMNR, CRCL) 손절 검토.**
 > 하락 사이클 확인 후 저점 재진입 전략.
-> 현재 BTC ~$69,294 — Kill까지 약 13% 여유. ⚠️
-> 현재 ETH ~$2,070 — Kill $2,000까지 ~3.4% 여유. 🔴🔴
+> 현재 BTC ~$69,359 — Kill까지 약 14% 여유. ⚠️
+> 현재 ETH ~$2,072 — Kill $2,000까지 ~3.5% 여유. 🔴🔴
 
 ---
 
