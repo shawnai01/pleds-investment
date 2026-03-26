@@ -352,7 +352,7 @@
 
 | Layer | Critic 담당 | 역할 |
 |-------|------------|------|
-| L1 Macro | **Counter-Consensus Analyst** (전담) | 사이클 + 역발상, Round 1 독립 뷰 후 Round 2 Critic |
+| L1 Macro | **Counter-Consensus Analyst** (전담) | Round 2 Critic 전담 — 컨센서스 취약점 공격, 역발상 반론 |
 | L2 Sector | **Sector Skeptic** (전담) ⭐ | 산업 회의론, 버블 패턴 매칭, TAM 검증 |
 | L3 Value Chain | **Moat Breaker** (전담) ⭐ | 해자 파괴, AI Commoditization Filter 적용 |
 | **L4 Company** | **Forensic Accountant** (전담) ⭐ | Bear Case 의무 제시, "죽이는 시나리오" 3개+, 역할 강화 |
@@ -375,19 +375,22 @@
 
 ---
 
-## 전문가 수 요약 (v3.1)
+## 전문가 수 요약 (v4.1)
 
-| Layer | 전문가 | 사회자 | Critic | 계 |
-|-------|--------|--------|--------|---|
-| Data Integrity | 1 (Data Auditor) | — | — | 1 |
-| Macro | 2 (Regime Analyst, **Counter-Consensus**⚔️) | 1 | Counter-Consensus | 3 |
-| Sector | 1 (Opportunity Scanner) | 1 | **Sector Skeptic**⚔️ | 3 |
-| Value Chain | 1 (Moat Analyst) | 1 | **Moat Breaker**⚔️ | 3 |
-| Company | 2 (Company Analyst, **Forensic**⚔️) | 1 | Forensic ⭐ | 3 |
-| Technical | 1 (Technical Analyst) + Dashboard(자동화) | 1 | **Signal Skeptic**⚔️ | 3 |
-| **Cross-Layer** | **1 (Bottleneck Hunter)** | — | — | **1** |
-| **Synthesis** | **1 (Allocator)** | — | — | **1** |
-| **Total** | **11** | **5** | **8** | **18** |
+| Layer | Analyst | Critic (전담) | Moderator | 계 |
+|-------|---------|-------------|-----------|---|
+| Data Integrity | Data Auditor (1) | — | — | 1 |
+| Macro | Regime Analyst, Geopolitical Strategist (2) | Counter-Consensus ⚔️ (1) | Macro Moderator (1) | 4 |
+| Sector | Opportunity Scanner (1) | Sector Skeptic ⚔️ (1) | Sector Moderator (1) | 3 |
+| Value Chain | Moat Analyst (1) | Moat Breaker ⚔️ (1) | VC Moderator (1) | 3 |
+| Company | Company Analyst (1) | Forensic Accountant ⚔️ (1) | Company Moderator (1) | 3 |
+| Technical | Technical Analyst (1) + Dashboard(자동화) | Signal Skeptic ⚔️ (1) | Technical Moderator (1) | 3 |
+| Cross-Layer | Bottleneck Hunter (1) | — | — | 1 |
+| Synthesis | Allocator (1) | — | — | 1 |
+| **Total** | **10** | **5** | **5** | **19** |
+
+> **Note:** Dashboard(자동화)는 전문가 수에 포함하지 않음 (스크립트).
+> Critic은 Round 2 반론 전담. Moderator는 Round 4 수렴 전담. 역할 혼합 금지.
 
 ---
 

@@ -970,7 +970,7 @@ Min Threshold = 0.10 (이 이하면 투자 안 함)
 2. grep -rn "{키워드}" METHODOLOGY.md WORKFLOW.md EXPERTS.md PORTFOLIO.md DATA-SOURCES.md INDEX.md
 3. 모든 참조 위치에서 정합성 확인 + 동시 수정
 4. 버전 번호 통일 업데이트
-5. INDEX.md 반영 여부 확인
+5. 변경 사항이 다른 헌법 문서에 영향 미치는지 확인
 ```
 
 ### 15.2 분기 정합성 감사 (Quarterly)

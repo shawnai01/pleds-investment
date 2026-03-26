@@ -326,7 +326,7 @@ Loop 5: → [5차 병목: ___]
    - 크립토: BTC, ETH 파동 카운트 + MVRV/도미넌스 분석
 
 2. **Round 2 — Critic 반론**
-   - **Technical Moderator**가 각 기술적 뷰에 대해 반론
+   - **Signal Skeptic (전담 Critic)**이 각 기술적 뷰에 대해 반론
    - "이 시그널이 페이크인 경우는?" 도전
    - L1-L4와의 정합성 검증
 
