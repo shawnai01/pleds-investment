@@ -93,9 +93,10 @@
   - 포트폴리오 보유종목에 직접 영향 있는 지정학 변수 플래그
 - **성향:** 제약 조건 기반 현실주의. 이념/의도 분석 경계.
 - **포트폴리오 연결 예시:**
-  - 미중 반도체 제재 → ASML/AMAT 수출 제한 → BMNR 채굴 장비 영향
+  - 크립토 규제 정치학 (SEC/의회 역학) → BMNR(ETH Treasury), CRCL(스테이블코인) 직접 영향
   - GENIUS Act 의회 통과 정치학 → CRCL 규제 클리어런스 타이밍
   - 에너지 안보 정책 → 우라늄(LEU/UEC), 희토류(MP) 수요 영향
+  - 미중 반도체 제재 → ASML/AMAT 수출 제한
 
 ### 1-M. **Macro Moderator (매크로 사회자)**
 - **역할:** 3인(Regime + Geopolitical + Bottleneck)의 논의를 정리하고 정반합 도출
