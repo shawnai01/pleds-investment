@@ -1,0 +1,67 @@
+{
+  "date": "2026-03-26",
+  "ticker": "478150",
+  "holdings": [
+    {
+      "name": "Rocket Lab USA, Inc.",
+      "symbol": "RKLB",
+      "weight": 8.54,
+      "shares": 0
+    },
+    {
+      "name": "Rtx Corp",
+      "symbol": "RTX",
+      "weight": 7.15,
+      "shares": 0
+    },
+    {
+      "name": "하니웰",
+      "symbol": "HON",
+      "weight": 5.58,
+      "shares": 0
+    },
+    {
+      "name": "헌팅턴 잉걸스 인더스트리즈",
+      "symbol": "HII",
+      "weight": 5.37,
+      "shares": 0
+    },
+    {
+      "name": "GE Aerospace",
+      "symbol": "GE",
+      "weight": 4.35,
+      "shares": 0
+    },
+    {
+      "name": "노스롭 그루먼",
+      "symbol": "NOC",
+      "weight": 4.34,
+      "shares": 0
+    },
+    {
+      "name": "록히드 마틴",
+      "symbol": "LMT",
+      "weight": 3.48,
+      "shares": 0
+    },
+    {
+      "name": "L3해리스 테크놀로지스",
+      "symbol": "LHX",
+      "weight": 3.24,
+      "shares": 0
+    },
+    {
+      "name": "Rolls-Royce Holdings PLC",
+      "symbol": "RR",
+      "weight": 3.21,
+      "shares": 0
+    },
+    {
+      "name": "제너럴 다이내믹스",
+      "symbol": "GD",
+      "weight": 3.12,
+      "shares": 0
+    }
+  ],
+  "collected_at": "2026-03-26T09:30:17.649265"
+}

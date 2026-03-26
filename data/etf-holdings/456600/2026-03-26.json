@@ -1,0 +1,67 @@
+{
+  "date": "2026-03-26",
+  "ticker": "456600",
+  "holdings": [
+    {
+      "name": "씨게이트",
+      "symbol": "STX",
+      "weight": 7.6,
+      "shares": 0
+    },
+    {
+      "name": "샌디스크",
+      "symbol": "SNDK",
+      "weight": 6.96,
+      "shares": 0
+    },
+    {
+      "name": "웨스턴 디지털",
+      "symbol": "WDC",
+      "weight": 6.21,
+      "shares": 0
+    },
+    {
+      "name": "Bloom Energy Corp",
+      "symbol": "BE",
+      "weight": 6.14,
+      "shares": 0
+    },
+    {
+      "name": "엔비디아 코퍼레이션",
+      "symbol": "NVDA",
+      "weight": 5.95,
+      "shares": 0
+    },
+    {
+      "name": "SK hynix Future Feb 26",
+      "symbol": "",
+      "weight": 4.77,
+      "shares": 0
+    },
+    {
+      "name": "알파벳 C",
+      "symbol": "GOOG",
+      "weight": 4.48,
+      "shares": 0
+    },
+    {
+      "name": "GE Vernova LLC",
+      "symbol": "GEV",
+      "weight": 3.55,
+      "shares": 0
+    },
+    {
+      "name": "Cameco Corp",
+      "symbol": "CCO",
+      "weight": 3.29,
+      "shares": 0
+    },
+    {
+      "name": "인텔",
+      "symbol": "INTC",
+      "weight": 2.72,
+      "shares": 0
+    }
+  ],
+  "collected_at": "2026-03-26T09:30:13.844509"
+}
