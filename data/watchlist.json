@@ -77,7 +77,20 @@
       "source_judgment": null,
       "conviction": 2,
       "status": "active"
+    },
+    {
+      "ticker": "NVDA",
+      "target_price": 175.0,
+      "target_type": "below",
+      "thesis_summary": "AI 인프라 독점, GPU+CUDA 해자, DC 수요 폭증",
+      "kill_price": 250.0,
+      "kill_reason": "AI capex 사이클 피크 확인 또는 경쟁 GPU 상용화",
+      "added_date": "2026-03-26",
+      "expiry_date": "2026-06-24",
+      "source_judgment": null,
+      "conviction": 2,
+      "status": "active"
     }
   ],
-  "last_updated": "2026-03-25T09:05:02.529978"
+  "last_updated": "2026-03-26T09:23:00"
 }
