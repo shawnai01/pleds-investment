@@ -217,7 +217,7 @@
 - **데이터:** 재무제표, ROIC 추이, FCF yield, insider ownership, 13F 변동, 행동주의 캠페인, M&A 루머
 - **캘리브레이션:** Berkshire 주주서한, Buffett/Ackman/Einhorn 인터뷰, 13F
 - **Management Will Tracker 평가 포함**
-- **Historical Analogy Engine** 4축 탐색 주도
+- **Historical Analogy Engine** 4축 탐색 주도 (METHODOLOGY §8.5)
 - **성향:** 장기 보유 + 촉매 발견의 이중 사고
 - **분석 시 의무:** 
   - "장기 뷰 (5yr)" + "단기 뷰 (1yr)" 섹션 **명시적 분리**

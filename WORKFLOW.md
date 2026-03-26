@@ -41,7 +41,7 @@
 - Adversarial Debate (Full 4-round 생략, Risk Flag만)
 - 100x Shawn 섹션 (Standard Day에선 생략)
 
-**예상 토큰:** ~30K (Full의 1/3)
+**예상 토큰:** ~30-40K (Full의 1/3~1/2)
 
 ### Event Day — Full Mode
 
@@ -258,14 +258,9 @@ Loop 5: → [5차 병목: ___]
      - Insider Transactions, Capital Allocation, Guidance Behavior 등 추적
      - 🟢 Aligned / 🟡 Neutral / 🔴 Misaligned 판정
 
-2. **Historical Analogy Engine (Round 1 후, Round 2 전)**
-   - 4축 탐색 의무:
-     1. **밸류에이션 유비**: P/S Xx에서 성장률 Y%인 동종이 3년 후 어디 갔나?
-     2. **전환기 유비**: CEO 교체/턴어라운드 성공/실패 사례는?
-     3. **산업 유비**: 독점 인프라가 경쟁에 무너진/버틴 사례는?
-     4. **매크로 유비**: 유사 매크로 환경에서 이 섹터/종목은?
-   - 유비의 한계(차이점) 3개 이상 명시 의무
-   - `[THESIS]` 태그로 표기
+2. **Historical Analogy Engine (R1 내 실행 — METHODOLOGY §8.5)**
+   - 4축 탐색 의무 (밸류에이션/전환기/산업/매크로 유비)
+   - 유비의 한계(차이점) 3개 이상 명시, `[THESIS]` 태그
 
 3. **Round 2 — Critic 반론 (Forensic Accountant 전담)**
    - **Forensic Accountant**가 모든 매수 후보에 대해 **Bear Case 의무 제시**
@@ -291,7 +286,7 @@ Loop 5: → [5차 병목: ___]
    - 미달 → Drill Question 생성 (예: "이 기업의 비명시적 경쟁자를 3개 더 찾아라")
    - 5회 후 미달 → ⚪ "No company edge" → Edge Score 0-4 → PASS 권고
 
-6. **투표:** 종목별 확신도 (1-10) + 적정가 + 액션 + **Edge Score (0-10)**
+6. **투표:** 종목별 확신도 (1-10) + 적정가 + 액션 + **Edge 판정 (🟢/🟡/🔴)**
 
 **산출물:** `layers/L4-company/watchlist.md` + `active-positions.md` + Loop 기록 + VP Box
 
@@ -379,8 +374,8 @@ Loop 5: → [5차 병목: ___]
    - sell-side 컨센서스 (web_search로 PT 평균, Buy/Hold/Sell 분포 수집)
    - PLEDS 뷰 vs 컨센서스 차이점 명시
    - 차이의 근거 (인과 메커니즘 기반)
-   - 검증 시점 + **Edge Score (0-10)**
-   - **Edge Score 0-4 → 자동 PASS** (edge 없는 곳에 돈 넣지 않음)
+   - 검증 시점 + **Edge 판정 (🟢 Strong / 🟡 Moderate / 🔴 No Edge)**
+   - **Edge 🔴 No Edge → 자동 PASS** (edge 없는 곳에 돈 넣지 않음)
 
 6. **기존 보유 종목 C2/C3/C4 조건 달성 여부 체크** (Pre-Commitment Trigger)
 
@@ -573,7 +568,7 @@ Loop 5: → [5차 병목: ___]
 1. **가설 명확화**: Shawn의 질문에서 핵심 가설 1-3개 추출
 2. **Layer 선별**: 위 테이블 기준으로 유관 Layer만 선택
 3. **데이터 수집**: 가설 검증에 필요한 데이터만 타겟 수집 (Phase 0 전체 불필요)
-4. **Deep Loop 실행**: 선별된 Layer에서 §10 Deep Loop (최대 5회, Edge Test)
+4. **Deep Loop 실행**: 선별된 Layer에서 §8 Deep Loop (최대 5회, Edge Test)
 5. **Cross-Domain Comparison**: 가설과 관련된 이종 비교 최소 1축
 6. **Conviction Card 업데이트**: 기존 카드가 있으면 delta 업데이트, 없으면 신규 작성
 7. **VP Box + Edge Score**: 필수 포함
