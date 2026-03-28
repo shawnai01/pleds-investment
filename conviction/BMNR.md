@@ -86,6 +86,7 @@
 | 2026-03-22 | **SEC Filing 팩트체크** | — | 아래 상세 | ⭐ 유지 (리스크 상향) |
 | 2026-03-25 | **MAVAN 런칭** | — | 스테이킹 인프라 완성 | ⭐⭐ 상향 |
 | 2026-03-26 | **PLEDS v4.0 Deep Loop** | — | Break Scenario 검증 완료 | ⭐⭐ 유지 |
+| 2026-03-28 | **MAVAN Valuation Analysis** | — | 스테이킹 $3.5-6.0/share 가치. Edge: Moderate | ⭐⭐ 유지 |
 
 ### 2026-03-22 SEC Filing Factcheck 결과
 
