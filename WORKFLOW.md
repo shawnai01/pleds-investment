@@ -1,5 +1,6 @@
 # PLEDS Workflow — Step by Step
 
+> v5.0 (2026-03-28): INCUBATE 상태 추가, Graveyard 연동, Consensus Escape Test 적용
 > v4.1 (2026-03-26): 감사 반영 — Hypothesis Mode, 3-Agent Triangulation, Phase 순서 정리
 > v3.2 (2026-03-26): 2-Track Daily Mode + Weekly Strategic Review 자동화
 > v3.1: 전문가 간소화 (24→18) + 전담 Critic 분리 + Regime Sentinel + Decision Tracker + Watchlist Alert
@@ -90,6 +91,22 @@ python3 scripts/watchlist-check.py --markdown >> daily/YYYY-MM-DD.md
 - Target price 도달 시 진입 검토 알림
 - Kill price 도달 시 워치리스트 제거 + 알림
 - 만료 7일 이내 종목 재평가 알림
+- **INCUBATE 만료 30일 전** 재평가 알림 (v5.0)
+
+**Watchlist 3-Status 체계 (v5.0 신설):**
+
+`data/watchlist.json`의 `status` 필드가 3가지 상태를 지원한다:
+
+| 상태 | 정의 | 만료 시 처리 |
+|------|------|-------------|
+| **WATCH** | 적극 모니터링 중. 진입 조건 달성 시 매수 검토 | 갱신 또는 WAIT/INCUBATE 전환 |
+| **WAIT** | 카탈리스트 대기 중. 당분간 액션 없음 | 갱신 또는 INCUBATE/삭제 |
+| **INCUBATE** 🆕 | 테시스는 매력적이나 현재 조건 부적합. 숙성 대기 | **Graveyard로 이동** 또는 WATCH 승격 |
+
+**INCUBATE 상태 규칙:**
+- 등록 시 `incubate_condition` 필드에 "어떤 조건이 바뀌면 재검토할 것인가?" 명시 필수
+- 만료 기한: 최대 12개월
+- 만료 + 조건 미충족 시 → `tracking/graveyard/REJECTED-THESES.md`에 기록
 
 **Data Source Health Check (METHODOLOGY §3-1 연동):**
 - 각 데이터 소스 응답 정상 여부 확인
